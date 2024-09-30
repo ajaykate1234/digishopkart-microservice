@@ -787,3 +787,93 @@ Caused by: org.hibernate.PersistentObjectException: detached entity passed to pe
 2024-09-30 12:31:09,022 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-09-30 12:31:09,028 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2024-09-30 12:31:09,042 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-09-30 12:31:18,465 [INFO] com.digishopkart.product_service.ProductServiceApplication [restartedMain] Starting ProductServiceApplication using Java 17.0.12 with PID 17020 (D:\Aj\Microservices\product-service\target\classes started by Vozon in D:\Aj\Microservices\product-service)
+2024-09-30 12:31:18,469 [DEBUG] com.digishopkart.product_service.ProductServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-09-30 12:31:18,471 [INFO] com.digishopkart.product_service.ProductServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-09-30 12:31:18,675 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-30 12:31:18,676 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-30 12:31:20,291 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-30 12:31:20,441 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2024-09-30 12:31:21,941 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8082 (http)
+2024-09-30 12:31:21,976 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-09-30 12:31:21,976 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-30 12:31:22,108 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-09-30 12:31:22,109 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3430 ms
+2024-09-30 12:31:22,486 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-30 12:31:22,655 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-30 12:31:22,774 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-09-30 12:31:23,510 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-30 12:31:23,577 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-09-30 12:31:24,323 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15469553
+2024-09-30 12:31:24,329 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-09-30 12:31:24,433 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-30 12:31:24,435 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-09-30 12:31:26,273 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-30 12:31:26,380 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-30 12:31:26,982 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-30 12:31:27,167 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2024-09-30 12:31:27,359 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-09-30 12:31:27,456 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-09-30 12:31:27,524 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-09-30 12:31:27,755 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-09-30 12:31:27,824 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8082 (http) with context path '/'
+2024-09-30 12:31:27,844 [INFO] com.digishopkart.product_service.ProductServiceApplication [restartedMain] Started ProductServiceApplication in 10.278 seconds (process running for 11.338)
+2024-09-30 12:31:37,926 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-30 12:31:37,927 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-09-30 12:31:37,927 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Detected StandardServletMultipartResolver
+2024-09-30 12:31:37,928 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Detected AcceptHeaderLocaleResolver
+2024-09-30 12:31:37,929 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Detected FixedThemeResolver
+2024-09-30 12:31:37,931 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a02ffaf
+2024-09-30 12:31:37,932 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Detected org.springframework.web.servlet.support.SessionFlashMapManager@183a7a71
+2024-09-30 12:31:37,933 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-09-30 12:31:37,934 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Completed initialization in 7 ms
+2024-09-30 12:31:37,951 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] PUT "/digi/product/update?id=1", parameters={masked}
+2024-09-30 12:31:37,979 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-2] Mapped to com.digishopkart.product_service.controller.ProductController#updateProduct(Long, Product)
+2024-09-30 12:31:38,245 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-8082-exec-2] Read "application/json;charset=UTF-8" to [com.digishopkart.product_service.entity.Product@2c3ce725]
+2024-09-30 12:31:38,610 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-2] updateProductService: res:com.digishopkart.product_service.entity.Product@1171a462
+2024-09-30 12:31:38,611 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-2] product not found for id:1
+2024-09-30 12:31:38,642 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-2] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-30 12:31:38,643 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-2] Nothing to write: null body
+2024-09-30 12:31:38,647 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-2] Completed 200 OK
+2024-09-30 12:32:04,338 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-3] PUT "/digi/product/update?id=1", parameters={masked}
+2024-09-30 12:32:04,339 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-3] Mapped to com.digishopkart.product_service.controller.ProductController#updateProduct(Long, Product)
+2024-09-30 12:32:04,341 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [http-nio-8082-exec-3] Read "application/json;charset=UTF-8" to [com.digishopkart.product_service.entity.Product@5aeb63cf]
+2024-09-30 12:32:04,386 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-3] updateProductService: res:com.digishopkart.product_service.entity.Product@2f4804e0
+2024-09-30 12:32:04,386 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-3] product not found for id:1
+2024-09-30 12:32:04,386 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-30 12:32:04,387 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-3] Nothing to write: null body
+2024-09-30 12:32:04,387 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-3] Completed 200 OK
+2024-09-30 12:32:38,795 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-4] GET "/digi/product/fetchAll?pageNo=0&pageSize=5", parameters={masked}
+2024-09-30 12:32:38,796 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-4] Mapped to com.digishopkart.product_service.controller.ProductController#fetchAllProducts(Integer, Integer)
+2024-09-30 12:32:38,948 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-4] fetchAllProductsService : res :Page 1 of 1 containing com.digishopkart.product_service.entity.Product instances
+2024-09-30 12:32:38,956 [WARN] org.springframework.data.web.config.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [http-nio-8082-exec-4] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-09-30 12:32:38,963 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-30 12:32:38,965 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-4] Writing [Page 1 of 1 containing com.digishopkart.product_service.entity.Product instances]
+2024-09-30 12:32:39,021 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-4] Completed 200 OK
+2024-09-30 12:33:19,186 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-5] GET "/digi/product/fetchAll?pageNo=10&pageSize=5", parameters={masked}
+2024-09-30 12:33:19,187 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-5] Mapped to com.digishopkart.product_service.controller.ProductController#fetchAllProducts(Integer, Integer)
+2024-09-30 12:33:19,219 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-5] fetchAllProductsService : res :Page 11 of 1 containing UNKNOWN instances
+2024-09-30 12:33:19,220 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-5] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-30 12:33:19,220 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-5] Writing [Page 11 of 1 containing UNKNOWN instances]
+2024-09-30 12:33:19,222 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-5] Completed 200 OK
+2024-09-30 12:33:31,898 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-6] GET "/digi/product/fetchAll?pageNo=0&pageSize=1", parameters={masked}
+2024-09-30 12:33:31,899 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-6] Mapped to com.digishopkart.product_service.controller.ProductController#fetchAllProducts(Integer, Integer)
+2024-09-30 12:33:31,913 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-6] fetchAllProductsService : res :Page 1 of 3 containing com.digishopkart.product_service.entity.Product instances
+2024-09-30 12:33:31,914 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-30 12:33:31,915 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-6] Writing [Page 1 of 3 containing com.digishopkart.product_service.entity.Product instances]
+2024-09-30 12:33:31,923 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-6] Completed 200 OK
+2024-09-30 12:33:42,164 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-7] GET "/digi/product/fetchAll?pageNo=2&pageSize=1", parameters={masked}
+2024-09-30 12:33:42,165 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-7] Mapped to com.digishopkart.product_service.controller.ProductController#fetchAllProducts(Integer, Integer)
+2024-09-30 12:33:42,176 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-7] fetchAllProductsService : res :Page 3 of 3 containing com.digishopkart.product_service.entity.Product instances
+2024-09-30 12:33:42,177 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-7] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-30 12:33:42,178 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-7] Writing [Page 3 of 3 containing com.digishopkart.product_service.entity.Product instances]
+2024-09-30 12:33:42,182 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-7] Completed 200 OK
+2024-09-30 12:34:53,776 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-10] GET "/digi/product/fetch?id=1", parameters={masked}
+2024-09-30 12:34:53,776 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-10] Mapped to com.digishopkart.product_service.controller.ProductController#fetchProduct(Long)
+2024-09-30 12:34:53,783 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-10] fetchProductByIdService: Product :com.digishopkart.product_service.entity.Product@366655aa
+2024-09-30 12:34:53,784 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-10] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-09-30 12:34:53,785 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-10] Writing [com.digishopkart.product_service.entity.Product@366655aa]
+2024-09-30 12:34:53,790 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-10] Completed 200 OK
