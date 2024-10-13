@@ -1,6 +1,6 @@
 package com.digishopkart.order_service.entity;
 
-import com.digishopkart.order_service.OrderStatus;
+import com.digishopkart.order_service.enums.OrderStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 

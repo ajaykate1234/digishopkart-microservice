@@ -3,12 +3,14 @@ package com.digishopkart.order_service.controller;
 import com.digishopkart.order_service.entity.Order;
 import com.digishopkart.order_service.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("digi")
@@ -26,6 +28,14 @@ public class OrderController {
         Order response = orderService.placeOrderService(customerId,productId,discountCouponId,varientId);
         return new ResponseEntity<>(response, HttpStatus.OK);
 
+    }
+
+    @GetMapping("/order/getAll")
+    public ResponseEntity<Page<Order>> getAllOrders(@RequestParam("pageSize") Integer pageSize,
+                                                    @RequestParam("pageNo") Integer pageNo){
+        Pageable pageable = PageRequest.of(pageNo,pageSize);
+        Page<Order> orders = orderService.getAllOrdersByPagging(pageable);
+        return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 
 }

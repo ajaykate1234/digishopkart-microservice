@@ -1,24 +1,22 @@
 package com.digishopkart.order_service.services;
 
-import com.digishopkart.order_service.OrderStatus;
+import com.digishopkart.order_service.enums.OrderStatus;
 import com.digishopkart.order_service.dto.*;
 import com.digishopkart.order_service.entity.Order;
 import com.digishopkart.order_service.enums.AddressType;
 import com.digishopkart.order_service.enums.CouponType;
 import com.digishopkart.order_service.repository.OrderRepository;
-import jakarta.persistence.DiscriminatorType;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -110,5 +108,14 @@ public class OrderService {
             return null;
         }
         return null;
+    }
+
+    public Page<Order> getAllOrdersByPagging(Pageable pageable) {
+        try {
+            return orderRepository.findAll(pageable);
+        }catch (Exception e){
+            log.error("Exception : {}",e);
+            return null;
+        }
     }
 }
