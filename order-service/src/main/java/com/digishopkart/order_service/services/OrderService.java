@@ -34,6 +34,15 @@ public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
+    @Autowired
+    private ProductServiceClient productServiceClient;
+
+    @Autowired
+    private DiscountServiceClient discountServiceClient;
+
+    @Autowired
+    private CustomerServiceClient customerServiceClient;
+
     public Order placeOrderService(Long customerId, Long productId, Long discountCouponId, Long varientId) {
         try {
             log.info("placeOrderService : customerId{}, productId{}, discountCouponId{}, varientId{}",
@@ -41,21 +50,25 @@ public class OrderService {
             RestTemplate restTemplate = new RestTemplate();
 
             log.info("customerUrl :{} " ,customerServiceUrl);
-            ResponseEntity<Customer> customerResponse = restTemplate.getForEntity(customerServiceUrl+"/customer/fetch?id="+customerId, Customer.class);
-            ResponseEntity<Product> productResponse = restTemplate.getForEntity(productServiceUrl+"/product/fetch?id="+productId, Product.class);
-            ResponseEntity<DiscountCoupon> discountCouponResponse = restTemplate.getForEntity(discountServiceUrl+"/discount/fetchCoupon?id="+discountCouponId, DiscountCoupon.class);
+//            ResponseEntity<Customer> customerResponse = restTemplate.getForEntity(customerServiceUrl+"/customer/fetch?id="+customerId, Customer.class);
+//            ResponseEntity<Product> productResponse = restTemplate.getForEntity(productServiceUrl+"/product/fetch?id="+productId, Product.class);
+//            ResponseEntity<DiscountCoupon> discountCouponResponse = restTemplate.getForEntity(discountServiceUrl+"/discount/fetchCoupon?id="+discountCouponId, DiscountCoupon.class);
+
+            Customer customerResponse = customerServiceClient.getCustomerById(customerId);
+            Product productResponse = productServiceClient.getProductById(productId);
+            DiscountCoupon discountCouponResponse = discountServiceClient.getDiscountCouponByid(discountCouponId);
 
             log.info("placeOrderService: customerResponse : {}",customerResponse);
             log.info("placeOrderService: productResponse : {}",productResponse);
             log.info("placeOrderService: discountCouponResponse: {} : ",discountCouponResponse);
 
-            Order order = createOrder(customerResponse.getBody(),productResponse.getBody(),discountCouponResponse.getBody(),varientId);
+            Order order = createOrder(customerResponse,productResponse,discountCouponResponse,varientId);
             Order res = orderRepository.save(order);
             log.info("placeOrderService : Plcaed order :{}",res);
             return res;
 
         } catch (Exception e) {
-            log.error("Exception :{}", e);
+            log.error("Exception:{}",e);
             return null;
         }
     }

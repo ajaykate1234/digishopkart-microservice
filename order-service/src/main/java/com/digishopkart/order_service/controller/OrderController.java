@@ -26,8 +26,11 @@ public class OrderController {
                                             @RequestParam("varientId") Long varientId){
 
         Order response = orderService.placeOrderService(customerId,productId,discountCouponId,varientId);
-        return new ResponseEntity<>(response, HttpStatus.OK);
 
+        if(response==null){
+            return  new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @GetMapping("/order/getAll")
@@ -35,6 +38,10 @@ public class OrderController {
                                                     @RequestParam("pageNo") Integer pageNo){
         Pageable pageable = PageRequest.of(pageNo,pageSize);
         Page<Order> orders = orderService.getAllOrdersByPagging(pageable);
+
+        if(orders==null){
+            return  new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
         return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 

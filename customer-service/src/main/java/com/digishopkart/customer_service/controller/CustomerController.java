@@ -26,7 +26,7 @@ public class CustomerController {
     @GetMapping("/customer/fetch")
     public ResponseEntity<Customer> fetchCustomer(@RequestParam("id") Long id){
         Customer response = customerService.fetchCustomerByIdService(id);
-        return new ResponseEntity<>(response, HttpStatus.FOUND);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @DeleteMapping("/customer/delete")

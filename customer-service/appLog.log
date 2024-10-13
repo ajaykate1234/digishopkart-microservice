@@ -365,3 +365,1026 @@
 2024-10-04 10:41:45,729 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-04 10:41:45,731 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
 2024-10-04 10:41:45,778 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2024-10-13 18:34:50,979 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Starting CustomerServiceApplication using Java 17.0.12 with PID 11192 (D:\Aj\digiShopKart\digishopkart-microservice\customer-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 18:34:50,986 [DEBUG] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 18:34:50,988 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 18:34:51,353 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 18:34:51,354 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 18:34:53,385 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 18:34:53,574 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 165 ms. Found 2 JPA repository interfaces.
+2024-10-13 18:34:55,260 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-10-13 18:34:55,294 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 18:34:55,294 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 18:34:55,431 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 18:34:55,432 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4076 ms
+2024-10-13 18:34:55,871 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 18:34:56,052 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 18:34:56,165 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 18:34:57,020 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 18:34:57,123 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 18:34:58,066 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c09cfd7
+2024-10-13 18:34:58,072 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 18:34:58,189 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 18:34:58,192 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-13 18:35:00,606 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 18:35:00,773 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 18:35:01,552 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 18:35:01,952 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 8 mappings in 'requestMappingHandlerMapping'
+2024-10-13 18:35:02,185 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 18:35:02,277 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 18:35:02,489 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 18:35:02,733 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-10-13 18:35:02,836 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path '/'
+2024-10-13 18:35:02,863 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Started CustomerServiceApplication in 13.133 seconds (process running for 14.34)
+2024-10-13 18:40:18,808 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-13 18:40:18,932 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 18:40:18,940 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2024-10-13 18:40:18,963 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2024-10-13 18:40:19,330 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Starting CustomerServiceApplication using Java 17.0.12 with PID 11192 (D:\Aj\digiShopKart\digishopkart-microservice\customer-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 18:40:19,332 [DEBUG] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 18:40:19,333 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 18:40:19,916 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 18:40:19,955 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2024-10-13 18:40:20,300 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-10-13 18:40:20,302 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 18:40:20,303 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 18:40:20,371 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 18:40:20,371 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1013 ms
+2024-10-13 18:40:20,463 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 18:40:20,474 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 18:40:20,524 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 18:40:20,538 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2024-10-13 18:40:20,610 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f20fa60
+2024-10-13 18:40:20,610 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2024-10-13 18:40:20,611 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 18:40:20,613 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-13 18:40:20,996 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 18:40:21,167 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 18:40:21,468 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 18:40:22,123 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 8 mappings in 'requestMappingHandlerMapping'
+2024-10-13 18:40:22,384 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 18:40:22,416 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 18:40:22,426 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 18:40:22,574 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-10-13 18:40:22,611 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path '/'
+2024-10-13 18:40:22,641 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Started CustomerServiceApplication in 3.548 seconds (process running for 334.117)
+2024-10-13 18:40:22,649 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2024-10-13 18:40:58,463 [INFO] com.digishopkart.discount_service.DiscountServiceApplication [restartedMain] Starting DiscountServiceApplication using Java 17.0.12 with PID 5652 (D:\Aj\digiShopKart\digishopkart-microservice\discount-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 18:40:58,468 [DEBUG] com.digishopkart.discount_service.DiscountServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 18:40:58,470 [INFO] com.digishopkart.discount_service.DiscountServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 18:40:58,728 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 18:40:58,728 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 18:41:00,890 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 18:41:01,053 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interface.
+2024-10-13 18:41:02,638 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8083 (http)
+2024-10-13 18:41:02,670 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 18:41:02,672 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 18:41:02,808 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 18:41:02,809 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4079 ms
+2024-10-13 18:41:03,228 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 18:41:03,416 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 18:41:03,536 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 18:41:04,372 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 18:41:04,468 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 18:41:05,121 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6371e4ef
+2024-10-13 18:41:05,126 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 18:41:05,231 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 18:41:05,234 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-13 18:41:07,148 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 18:41:07,271 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 18:41:07,853 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 18:41:08,176 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2024-10-13 18:41:08,363 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 18:41:08,449 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 18:41:08,539 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 18:41:08,864 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-10-13 18:41:08,931 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8083 (http) with context path '/'
+2024-10-13 18:41:08,952 [INFO] com.digishopkart.discount_service.DiscountServiceApplication [restartedMain] Started DiscountServiceApplication in 11.575 seconds (process running for 12.882)
+2024-10-13 18:41:53,546 [INFO] com.digishopkart.product_service.ProductServiceApplication [restartedMain] Starting ProductServiceApplication using Java 17.0.12 with PID 2444 (D:\Aj\digiShopKart\digishopkart-microservice\product-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 18:41:53,550 [DEBUG] com.digishopkart.product_service.ProductServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 18:41:53,553 [INFO] com.digishopkart.product_service.ProductServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 18:41:53,806 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 18:41:53,807 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 18:41:56,236 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 18:41:56,467 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 205 ms. Found 2 JPA repository interfaces.
+2024-10-13 18:41:58,534 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8082 (http)
+2024-10-13 18:41:58,564 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 18:41:58,564 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 18:41:58,708 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 18:41:58,709 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4901 ms
+2024-10-13 18:41:59,306 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 18:41:59,449 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 18:41:59,543 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 18:42:00,340 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 18:42:00,416 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 18:42:01,389 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c702dad
+2024-10-13 18:42:01,395 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 18:42:01,530 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 18:42:01,538 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-13 18:42:04,493 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 18:42:04,717 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 18:42:06,156 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 18:42:06,406 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 7 mappings in 'requestMappingHandlerMapping'
+2024-10-13 18:42:06,716 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 18:42:06,826 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 18:42:06,923 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 18:42:07,261 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-10-13 18:42:07,410 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8082 (http) with context path '/'
+2024-10-13 18:42:07,466 [INFO] com.digishopkart.product_service.ProductServiceApplication [restartedMain] Started ProductServiceApplication in 15.184 seconds (process running for 16.911)
+2024-10-13 18:42:50,970 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 11508 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 18:42:50,975 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 18:42:50,977 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 18:42:51,188 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 18:42:51,189 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 18:42:53,270 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 18:42:53,497 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 183 ms. Found 1 JPA repository interface.
+2024-10-13 18:42:55,560 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 18:42:55,591 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 18:42:55,592 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 18:42:55,742 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 18:42:55,743 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4553 ms
+2024-10-13 18:42:56,267 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 18:42:56,467 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 18:42:56,616 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 18:42:57,667 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 18:42:57,754 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 18:42:58,794 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43aee084
+2024-10-13 18:42:58,799 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 18:42:58,929 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 18:43:01,196 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 18:43:01,298 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 18:43:01,974 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 18:43:02,360 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2024-10-13 18:43:02,642 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 18:43:02,734 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 18:43:02,816 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 18:43:03,093 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-10-13 18:43:03,168 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8084 (http) with context path '/'
+2024-10-13 18:43:03,199 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Started OrderServiceApplication in 13.543 seconds (process running for 15.04)
+2024-10-13 18:43:07,016 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8084-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 18:43:07,018 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-10-13 18:43:07,020 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected StandardServletMultipartResolver
+2024-10-13 18:43:07,020 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected AcceptHeaderLocaleResolver
+2024-10-13 18:43:07,020 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected FixedThemeResolver
+2024-10-13 18:43:07,022 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@89a32b1
+2024-10-13 18:43:07,023 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@29b9219b
+2024-10-13 18:43:07,024 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 18:43:07,025 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Completed initialization in 6 ms
+2024-10-13 18:43:07,054 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] GET "/digi/order/getAll?pageNo=0&pageSize=10", parameters={masked}
+2024-10-13 18:43:07,099 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-1] Mapped to com.digishopkart.order_service.controller.OrderController#getAllOrders(Integer, Integer)
+2024-10-13 18:43:08,006 [WARN] org.springframework.data.web.config.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [http-nio-8084-exec-1] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-10-13 18:43:08,036 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 18:43:08,040 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-1] Writing [Page 1 of 1 containing com.digishopkart.order_service.entity.Order instances]
+2024-10-13 18:43:08,157 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Completed 200 OK
+2024-10-13 18:43:19,506 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-3] GET "/digi/order/getAll?pageNo=0&pageSize=10", parameters={masked}
+2024-10-13 18:43:19,508 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-3] Mapped to com.digishopkart.order_service.controller.OrderController#getAllOrders(Integer, Integer)
+2024-10-13 18:43:19,522 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 18:43:19,523 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-3] Writing [Page 1 of 1 containing com.digishopkart.order_service.entity.Order instances]
+2024-10-13 18:43:19,526 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-3] Completed 200 OK
+2024-10-13 18:43:36,739 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-4] GET "/digi/order/getAll?pageNo=0&pageSize=10", parameters={masked}
+2024-10-13 18:43:36,740 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-4] Mapped to com.digishopkart.order_service.controller.OrderController#getAllOrders(Integer, Integer)
+2024-10-13 18:43:36,755 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 18:43:36,756 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-4] Writing [Page 1 of 1 containing com.digishopkart.order_service.entity.Order instances]
+2024-10-13 18:43:36,760 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-4] Completed 200 OK
+2024-10-13 18:50:45,584 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 18:50:45,603 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-10-13 18:50:45,630 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-10-13 19:03:48,966 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 13284 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:03:48,973 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:03:48,978 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:03:49,244 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:03:49,245 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:03:51,420 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:03:51,591 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 145 ms. Found 1 JPA repository interface.
+2024-10-13 19:03:53,601 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:03:53,637 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:03:53,638 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:03:53,804 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:03:53,805 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4558 ms
+2024-10-13 19:03:54,240 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:03:54,424 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:03:54,534 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:03:55,401 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:03:55,476 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:03:56,126 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dc676cb
+2024-10-13 19:03:56,131 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:03:56,249 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:03:58,087 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:03:58,215 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:03:58,965 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'orderService': Error creating bean with name 'orderService': Unsatisfied dependency expressed through field 'productServiceClient': Error creating bean with name 'com.digishopkart.order_service.services.ProductServiceClient': Unexpected exception during bean creation
+2024-10-13 19:03:58,966 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:03:58,975 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:03:58,996 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-10-13 19:03:59,001 [INFO] org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2024-10-13 19:03:59,029 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-13 19:03:59,088 [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productServiceClient in com.digishopkart.order_service.services.OrderService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2024-10-13 19:07:12,293 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 4964 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:07:12,299 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:07:12,303 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:07:12,555 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:07:12,556 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:07:15,269 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:07:15,576 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 279 ms. Found 1 JPA repository interface.
+2024-10-13 19:07:18,346 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:07:18,575 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6016 ms
+2024-10-13 19:07:19,119 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:07:19,333 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:07:19,459 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:07:20,378 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:07:20,475 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:07:21,236 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ce9f7a7
+2024-10-13 19:07:21,242 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:07:21,469 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:07:23,789 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:07:23,891 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:07:24,439 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'orderService': Error creating bean with name 'orderService': Unsatisfied dependency expressed through field 'productServiceClient': Error creating bean with name 'com.digishopkart.order_service.services.ProductServiceClient': Unexpected exception during bean creation
+2024-10-13 19:07:24,440 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:07:24,448 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:07:24,472 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-10-13 19:07:29,756 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 2128 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:07:29,770 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:07:29,772 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:07:29,926 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:07:29,927 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:07:31,849 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:07:32,075 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 205 ms. Found 1 JPA repository interface.
+2024-10-13 19:07:34,565 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:07:34,601 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:07:34,603 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:07:35,014 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:07:35,015 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5086 ms
+2024-10-13 19:07:35,753 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:07:35,925 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:07:36,026 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:07:36,898 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:07:37,010 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:07:37,702 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@107cd0b5
+2024-10-13 19:07:37,707 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:07:37,832 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:07:40,069 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:07:40,188 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:07:40,823 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'orderService': Error creating bean with name 'orderService': Unsatisfied dependency expressed through field 'productServiceClient': Error creating bean with name 'com.digishopkart.order_service.services.ProductServiceClient': Unexpected exception during bean creation
+2024-10-13 19:07:40,825 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:07:40,832 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:07:40,857 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-10-13 19:07:40,863 [INFO] org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2024-10-13 19:07:40,892 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-13 19:07:40,949 [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productServiceClient in com.digishopkart.order_service.services.OrderService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2024-10-13 19:11:08,792 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 5216 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:11:08,802 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:11:08,806 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:11:09,031 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:11:09,033 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:11:11,462 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:11:11,633 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2024-10-13 19:11:13,589 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:11:13,618 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:11:13,619 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:11:13,778 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:11:13,779 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4745 ms
+2024-10-13 19:11:14,180 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:11:14,326 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:11:14,421 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:11:15,229 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:11:15,309 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:11:15,995 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41b2034
+2024-10-13 19:11:16,003 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:11:16,206 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:11:18,149 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:11:18,224 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:11:18,751 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'orderService': Error creating bean with name 'orderService': Unsatisfied dependency expressed through field 'productServiceClient': Error creating bean with name 'com.digishopkart.order_service.services.ProductServiceClient': Unexpected exception during bean creation
+2024-10-13 19:11:18,752 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:11:18,762 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:11:18,783 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-10-13 19:11:18,787 [INFO] org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2024-10-13 19:11:18,811 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-13 19:11:18,862 [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productServiceClient in com.digishopkart.order_service.services.OrderService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2024-10-13 19:25:17,086 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 14584 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:25:17,091 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:25:17,095 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:25:17,279 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:25:17,280 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:25:19,232 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:25:19,409 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interface.
+2024-10-13 19:25:21,468 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:25:21,509 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:25:21,510 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:25:21,680 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:25:21,685 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4401 ms
+2024-10-13 19:25:22,207 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:25:22,421 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:25:22,521 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:25:23,281 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:25:23,353 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:25:23,917 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50fc0060
+2024-10-13 19:25:23,922 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:25:24,074 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:25:26,297 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:25:26,379 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:25:26,935 [WARN] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController': Unsatisfied dependency expressed through field 'orderService': Error creating bean with name 'orderService': Unsatisfied dependency expressed through field 'productServiceClient': Error creating bean with name 'com.digishopkart.order_service.services.ProductServiceClient': Unexpected exception during bean creation
+2024-10-13 19:25:26,936 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:25:26,942 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:25:26,965 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2024-10-13 19:25:26,971 [INFO] org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2024-10-13 19:25:27,005 [INFO] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-13 19:25:27,064 [ERROR] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field productServiceClient in com.digishopkart.order_service.services.OrderService required a bean of type 'org.springframework.cloud.openfeign.FeignContext' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.cloud.openfeign.FeignContext' in your configuration.
+
+2024-10-13 19:26:28,147 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 9060 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:26:28,152 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:26:28,154 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:26:28,321 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:26:28,322 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:26:30,288 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:26:30,475 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 162 ms. Found 1 JPA repository interface.
+2024-10-13 19:26:31,178 [INFO] org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=42b26f01-f7dc-381d-83d9-8dbdb112d341
+2024-10-13 19:26:32,614 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:26:32,645 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:26:32,646 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:26:32,804 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:26:32,805 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4482 ms
+2024-10-13 19:26:33,247 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:26:33,424 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:26:33,541 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:26:34,413 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:26:34,502 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:26:35,259 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@750d3318
+2024-10-13 19:26:35,264 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:26:35,397 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:26:37,312 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:26:37,394 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:26:38,256 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 19:26:38,314 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-10-13 19:26:38,691 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2024-10-13 19:26:38,912 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 19:26:39,024 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 19:26:39,132 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 19:26:39,878 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8084 (http) with context path '/'
+2024-10-13 19:26:40,116 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Started OrderServiceApplication in 13.326 seconds (process running for 14.723)
+2024-10-13 19:26:59,674 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8084-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 19:26:59,676 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-10-13 19:26:59,678 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected StandardServletMultipartResolver
+2024-10-13 19:26:59,678 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected AcceptHeaderLocaleResolver
+2024-10-13 19:26:59,679 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected FixedThemeResolver
+2024-10-13 19:26:59,681 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7dc3f230
+2024-10-13 19:26:59,682 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d1f5bbd
+2024-10-13 19:26:59,683 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 19:26:59,684 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Completed initialization in 7 ms
+2024-10-13 19:26:59,703 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] POST "/digi/order/placeOrder?customerId=1&productId=1&discountCouponId=1&varientId=2", parameters={masked}
+2024-10-13 19:26:59,747 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-1] Mapped to com.digishopkart.order_service.controller.OrderController#placeOrder(Long, Long, Long, Long)
+2024-10-13 19:26:59,817 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] placeOrderService : customerId1, productId1, discountCouponId1, varientId2
+2024-10-13 19:26:59,855 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] customerUrl :http://localhost:8081/digi 
+2024-10-13 19:26:59,921 [DEBUG] org.springframework.web.client.RestTemplate [http-nio-8084-exec-1] HTTP GET http://localhost:8081/digi/customer/fetch?id=1
+2024-10-13 19:27:00,234 [DEBUG] org.springframework.web.client.RestTemplate [http-nio-8084-exec-1] Accept=[application/json, application/*+json]
+2024-10-13 19:27:01,026 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 19:27:01,048 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-10-13 19:27:01,056 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected StandardServletMultipartResolver
+2024-10-13 19:27:01,063 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected AcceptHeaderLocaleResolver
+2024-10-13 19:27:01,066 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected FixedThemeResolver
+2024-10-13 19:27:01,462 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@593cf1b
+2024-10-13 19:27:01,464 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@37322cec
+2024-10-13 19:27:01,507 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 19:27:01,514 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Completed initialization in 458 ms
+2024-10-13 19:27:01,567 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] GET "/digi/customer/fetch?id=1", parameters={masked}
+2024-10-13 19:27:01,681 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8081-exec-1] Mapped to com.digishopkart.customer_service.controller.CustomerController#fetchCustomer(Long)
+2024-10-13 19:27:02,173 [INFO] com.digishopkart.customer_service.service.CustomerService [http-nio-8081-exec-1] fetchCustomerById: res:com.digishopkart.customer_service.entity.Customer@25cf392d
+2024-10-13 19:27:02,337 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-1] Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2024-10-13 19:27:02,340 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-1] Writing [com.digishopkart.customer_service.entity.Customer@25cf392d]
+2024-10-13 19:27:02,466 [DEBUG] org.springframework.web.client.RestTemplate [http-nio-8084-exec-1] Response 302 FOUND
+2024-10-13 19:27:02,469 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Completed 302 FOUND
+2024-10-13 19:27:02,470 [DEBUG] org.springframework.web.client.RestTemplate [http-nio-8084-exec-1] Reading to [com.digishopkart.order_service.dto.Customer]
+2024-10-13 19:27:03,982 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 19:27:04,006 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-10-13 19:27:04,020 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Detected StandardServletMultipartResolver
+2024-10-13 19:27:04,022 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Detected AcceptHeaderLocaleResolver
+2024-10-13 19:27:04,023 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Detected FixedThemeResolver
+2024-10-13 19:27:04,109 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@314efb45
+2024-10-13 19:27:04,112 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@27146d99
+2024-10-13 19:27:04,120 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 19:27:04,121 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Completed initialization in 113 ms
+2024-10-13 19:27:04,178 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] GET "/digi/product/fetch?id=1", parameters={masked}
+2024-10-13 19:27:04,250 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-1] Mapped to com.digishopkart.product_service.controller.ProductController#fetchProduct(Long)
+2024-10-13 19:27:04,854 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-1] fetchProductByIdService: Product :com.digishopkart.product_service.entity.Product@782ebb1b
+2024-10-13 19:27:04,998 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:27:05,003 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-1] Writing [com.digishopkart.product_service.entity.Product@782ebb1b]
+2024-10-13 19:27:05,100 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-1] Completed 200 OK
+2024-10-13 19:27:05,133 [DEBUG] org.springframework.web.client.HttpMessageConverterExtractor [http-nio-8084-exec-1] Reading to [com.digishopkart.order_service.dto.Product]
+2024-10-13 19:27:05,137 [DEBUG] org.springframework.web.client.RestTemplate [http-nio-8084-exec-1] HTTP GET http://localhost:8083/digi/discount/fetchCoupon?id=1
+2024-10-13 19:27:05,146 [DEBUG] org.springframework.web.client.RestTemplate [http-nio-8084-exec-1] Accept=[application/json, application/*+json]
+2024-10-13 19:27:06,943 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 19:27:06,952 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-10-13 19:27:06,959 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Detected StandardServletMultipartResolver
+2024-10-13 19:27:06,960 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Detected AcceptHeaderLocaleResolver
+2024-10-13 19:27:06,961 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Detected FixedThemeResolver
+2024-10-13 19:27:06,965 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1300246d
+2024-10-13 19:27:06,967 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@41ff21af
+2024-10-13 19:27:06,978 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 19:27:06,981 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Completed initialization in 26 ms
+2024-10-13 19:27:07,032 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] GET "/digi/discount/fetchCoupon?id=1", parameters={masked}
+2024-10-13 19:27:07,070 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8083-exec-1] Mapped to com.digishopkart.discount_service.controller.DiscountCouponController#fetchDiscountCoupon(Long)
+2024-10-13 19:27:07,671 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [http-nio-8083-exec-1] fetchDiscountCouponByIdService: res : DiscountCoupon(id=1, couponType=PERCENTAGE, value=30.0)
+2024-10-13 19:27:07,785 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8083-exec-1] Using 'application/json', given [application/json, application/*+json] and supported [application/json, application/*+json]
+2024-10-13 19:27:07,791 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8083-exec-1] Writing [DiscountCoupon(id=1, couponType=PERCENTAGE, value=30.0)]
+2024-10-13 19:27:08,019 [DEBUG] org.springframework.web.client.RestTemplate [http-nio-8084-exec-1] Response 200 OK
+2024-10-13 19:27:08,020 [DEBUG] org.springframework.web.client.RestTemplate [http-nio-8084-exec-1] Reading to [com.digishopkart.order_service.dto.DiscountCoupon]
+2024-10-13 19:27:08,031 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-1] Completed 200 OK
+2024-10-13 19:27:08,035 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] placeOrderService: customerResponse : <302 FOUND Found,Customer(id=1, name=Ajay, gender=MALE, email=ajay@gmail.com, mobile=9999999111, status=true, customerAddressList=[CustomerAddress(id=1, fullname=Ajay Somnath Kate, country=India, state=Mah, town=Pune, area=Kharadi, houseOrBuilding=Sai parasad, landmark=Tuljabhawani mandir, pinCode=411014, mobile=9876313111, addressType=CURRENT), CustomerAddress(id=2, fullname=Ajay Somnath Kate1, country=India, state=mah, town=Indapur, area=sarati, houseOrBuilding=my house, landmark=Near jijamata Petrolium, pinCode=413103, mobile=8334343344, addressType=PERMENANT)]),[Content-Type:"application/json", Transfer-Encoding:"chunked", Date:"Sun, 13 Oct 2024 13:57:02 GMT", Keep-Alive:"timeout=60", Connection:"keep-alive"]>
+2024-10-13 19:27:08,069 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] placeOrderService: productResponse : Product(id=1, productName=Formal Shirt, brand=Adidas, productPrice=1699.0, availability=true, varientList=[Varient(id=1, name=Size, value=S, availability=true), Varient(id=2, name=Size, value=M, availability=true), Varient(id=3, name=Size, value=L, availability=true), Varient(id=4, name=Size, value=XL, availability=true), Varient(id=5, name=Size, value=XXL, availability=false)])
+2024-10-13 19:27:08,071 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] placeOrderService: discountCouponResponse: <200 OK OK,DiscountCoupon(id=1, couponType=PERCENTAGE, value=30.0),[Content-Type:"application/json", Transfer-Encoding:"chunked", Date:"Sun, 13 Oct 2024 13:57:08 GMT", Keep-Alive:"timeout=60", Connection:"keep-alive"]> : 
+2024-10-13 19:27:08,077 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] createOrder :PERCENTAGE final price : 1189.3
+2024-10-13 19:27:08,317 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] placeOrderService : Plcaed order :Order(id=52, createdDate=2024-10-13T19:27:08.078663900, updatedDate=2024-10-13T19:27:08.078663900, active=true, orderStatus=PLACED, fullName=Ajay, address=Sai parasad, Kharadi, Tuljabhawani mandir, Pune, , Mah, India, 411014, finalPrice=1189.3, productName=Formal Shirt, varientDetails=Size, M)
+2024-10-13 19:27:08,383 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:27:08,386 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-1] Writing [Order(id=52, createdDate=2024-10-13T19:27:08.078663900, updatedDate=2024-10-13T19:27:08.078663900, a (truncated)...]
+2024-10-13 19:27:08,521 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Completed 200 OK
+2024-10-13 19:27:26,024 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-3] GET "/digi/order/getAll?pageNo=0&pageSize=10", parameters={masked}
+2024-10-13 19:27:26,025 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-3] Mapped to com.digishopkart.order_service.controller.OrderController#getAllOrders(Integer, Integer)
+2024-10-13 19:27:26,407 [WARN] org.springframework.data.web.config.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [http-nio-8084-exec-3] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-10-13 19:27:26,411 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:27:26,413 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-3] Writing [Page 1 of 1 containing com.digishopkart.order_service.entity.Order instances]
+2024-10-13 19:27:26,431 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-3] Completed 200 OK
+2024-10-13 19:37:58,033 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:37:58,071 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:37:58,121 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-10-13 19:38:09,784 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 10840 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:38:09,789 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:38:09,790 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:38:09,996 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:38:09,996 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:38:12,199 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:38:12,364 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interface.
+2024-10-13 19:38:13,002 [INFO] org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=ba29a791-b18f-329a-957c-f33c3becfc6e
+2024-10-13 19:38:14,500 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:38:14,530 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:38:14,531 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:38:14,688 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:38:14,689 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4691 ms
+2024-10-13 19:38:15,163 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:38:15,344 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:38:15,481 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:38:16,387 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:38:16,469 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:38:17,238 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23567111
+2024-10-13 19:38:17,244 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:38:17,384 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:38:19,344 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:38:19,439 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:38:20,165 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 19:38:20,229 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-10-13 19:38:20,669 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2024-10-13 19:38:20,850 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 19:38:20,981 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 19:38:21,051 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 19:38:21,636 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8084 (http) with context path '/'
+2024-10-13 19:38:21,833 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Started OrderServiceApplication in 13.402 seconds (process running for 14.664)
+2024-10-13 19:38:38,532 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8084-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 19:38:38,532 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-10-13 19:38:38,533 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected StandardServletMultipartResolver
+2024-10-13 19:38:38,533 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected AcceptHeaderLocaleResolver
+2024-10-13 19:38:38,534 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected FixedThemeResolver
+2024-10-13 19:38:38,536 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a89cd58
+2024-10-13 19:38:38,537 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@18156ca9
+2024-10-13 19:38:38,538 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 19:38:38,538 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Completed initialization in 5 ms
+2024-10-13 19:38:38,566 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] POST "/digi/order/placeOrder?customerId=1&productId=1&discountCouponId=1&varientId=2", parameters={masked}
+2024-10-13 19:38:38,605 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-1] Mapped to com.digishopkart.order_service.controller.OrderController#placeOrder(Long, Long, Long, Long)
+2024-10-13 19:38:38,661 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] placeOrderService : customerId1, productId1, discountCouponId1, varientId2
+2024-10-13 19:38:38,693 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] customerUrl :http://localhost:8081/digi 
+2024-10-13 19:38:38,779 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-3] GET "/digi/customer/fetch?id=1", parameters={masked}
+2024-10-13 19:38:38,820 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8081-exec-3] Mapped to com.digishopkart.customer_service.controller.CustomerController#fetchCustomer(Long)
+2024-10-13 19:38:38,911 [INFO] com.digishopkart.customer_service.service.CustomerService [http-nio-8081-exec-3] fetchCustomerById: res:com.digishopkart.customer_service.entity.Customer@1db1e19a
+2024-10-13 19:38:38,930 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:38:38,935 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-3] Writing [com.digishopkart.customer_service.entity.Customer@1db1e19a]
+2024-10-13 19:38:38,962 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-3] Completed 302 FOUND
+2024-10-13 19:38:38,974 [ERROR] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] Exception:{}
+feign.FeignException: [302] during [GET] to [http://localhost:8081/digi/customer/fetch?id=1] [CustomerServiceClient#getCustomerById(Long)]: [{"id":1,"name":"Ajay","gender":"MALE","email":"ajay@gmail.com","mobile":"9999999111","status":true,"customerAddressList":[{"id":1,"fullname":"Ajay Somnath Kate","country":"India","state":"Mah","town":... (591 bytes)]
+	at feign.FeignException.errorStatus(FeignException.java:208)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:103)
+	at feign.InvocationContext.decodeError(InvocationContext.java:126)
+	at feign.InvocationContext.proceed(InvocationContext.java:72)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:63)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:99)
+	at jdk.proxy4/jdk.proxy4.$Proxy130.getCustomerById(Unknown Source)
+	at com.digishopkart.order_service.services.OrderService.placeOrderService(OrderService.java:57)
+	at com.digishopkart.order_service.controller.OrderController.placeOrder(OrderController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-10-13 19:38:39,124 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:38:39,128 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-1] Nothing to write: null body
+2024-10-13 19:38:39,132 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Completed 200 OK
+2024-10-13 19:41:08,090 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-6] GET "/digi/customer/fetch?id=1", parameters={masked}
+2024-10-13 19:41:08,092 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8081-exec-6] Mapped to com.digishopkart.customer_service.controller.CustomerController#fetchCustomer(Long)
+2024-10-13 19:41:08,110 [INFO] com.digishopkart.customer_service.service.CustomerService [http-nio-8081-exec-6] fetchCustomerById: res:com.digishopkart.customer_service.entity.Customer@1badf56f
+2024-10-13 19:41:08,112 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:41:08,113 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-6] Writing [com.digishopkart.customer_service.entity.Customer@1badf56f]
+2024-10-13 19:41:08,121 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-6] Completed 302 FOUND
+2024-10-13 19:43:47,346 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-8] GET "/digi/customer/fetch?id=1", parameters={masked}
+2024-10-13 19:43:47,349 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8081-exec-8] Mapped to com.digishopkart.customer_service.controller.CustomerController#fetchCustomer(Long)
+2024-10-13 19:43:47,368 [INFO] com.digishopkart.customer_service.service.CustomerService [http-nio-8081-exec-8] fetchCustomerById: res:com.digishopkart.customer_service.entity.Customer@29e1547e
+2024-10-13 19:43:47,395 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-8] Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-10-13 19:43:47,450 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-8] Writing [com.digishopkart.customer_service.entity.Customer@29e1547e]
+2024-10-13 19:43:47,458 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-8] Completed 302 FOUND
+2024-10-13 19:50:55,792 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] GET "/digi/customer/fetch?id=1", parameters={masked}
+2024-10-13 19:50:55,793 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8081-exec-2] Mapped to com.digishopkart.customer_service.controller.CustomerController#fetchCustomer(Long)
+2024-10-13 19:50:55,803 [INFO] com.digishopkart.customer_service.service.CustomerService [http-nio-8081-exec-2] fetchCustomerById: res:com.digishopkart.customer_service.entity.Customer@457cd7e2
+2024-10-13 19:50:55,804 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-2] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:50:55,805 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-2] Writing [com.digishopkart.customer_service.entity.Customer@457cd7e2]
+2024-10-13 19:50:55,809 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Completed 302 FOUND
+2024-10-13 19:51:29,676 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-4] GET "/digi/order/getAll?pageNo=0&pageSize=10", parameters={masked}
+2024-10-13 19:51:29,693 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-4] Mapped to com.digishopkart.order_service.controller.OrderController#getAllOrders(Integer, Integer)
+2024-10-13 19:51:30,126 [WARN] org.springframework.data.web.config.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [http-nio-8084-exec-4] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-10-13 19:51:30,130 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:51:30,132 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-4] Writing [Page 1 of 1 containing com.digishopkart.order_service.entity.Order instances]
+2024-10-13 19:51:30,166 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-4] Completed 200 OK
+2024-10-13 19:51:41,080 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-3] GET "/digi/customer/fetch?id=1", parameters={masked}
+2024-10-13 19:51:41,081 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8081-exec-3] Mapped to com.digishopkart.customer_service.controller.CustomerController#fetchCustomer(Long)
+2024-10-13 19:51:41,095 [INFO] com.digishopkart.customer_service.service.CustomerService [http-nio-8081-exec-3] fetchCustomerById: res:com.digishopkart.customer_service.entity.Customer@29148cff
+2024-10-13 19:51:41,096 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:51:41,097 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-3] Writing [com.digishopkart.customer_service.entity.Customer@29148cff]
+2024-10-13 19:51:41,102 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-3] Completed 302 FOUND
+2024-10-13 19:51:54,925 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-4] GET "/digi/discount/fetchCoupon?id=1", parameters={masked}
+2024-10-13 19:51:54,978 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8083-exec-4] Mapped to com.digishopkart.discount_service.controller.DiscountCouponController#fetchDiscountCoupon(Long)
+2024-10-13 19:51:55,070 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [http-nio-8083-exec-4] fetchDiscountCouponByIdService: res : DiscountCoupon(id=1, couponType=PERCENTAGE, value=30.0)
+2024-10-13 19:51:55,083 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8083-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:51:55,085 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8083-exec-4] Writing [DiscountCoupon(id=1, couponType=PERCENTAGE, value=30.0)]
+2024-10-13 19:51:55,095 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-4] Completed 200 OK
+2024-10-13 19:52:07,414 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-4] GET "/digi/product/fetch?id=1", parameters={masked}
+2024-10-13 19:52:07,422 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-4] Mapped to com.digishopkart.product_service.controller.ProductController#fetchProduct(Long)
+2024-10-13 19:52:07,448 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-4] fetchProductByIdService: Product :com.digishopkart.product_service.entity.Product@1fa825a4
+2024-10-13 19:52:07,451 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:52:07,452 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-4] Writing [com.digishopkart.product_service.entity.Product@1fa825a4]
+2024-10-13 19:52:07,467 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-4] Completed 200 OK
+2024-10-13 19:52:21,851 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-4] GET "/digi/customer/fetch?id=1", parameters={masked}
+2024-10-13 19:52:21,852 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8081-exec-4] Mapped to com.digishopkart.customer_service.controller.CustomerController#fetchCustomer(Long)
+2024-10-13 19:52:21,863 [INFO] com.digishopkart.customer_service.service.CustomerService [http-nio-8081-exec-4] fetchCustomerById: res:com.digishopkart.customer_service.entity.Customer@4ff14898
+2024-10-13 19:52:21,864 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-4] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:52:21,865 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-4] Writing [com.digishopkart.customer_service.entity.Customer@4ff14898]
+2024-10-13 19:52:21,872 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-4] Completed 302 FOUND
+2024-10-13 19:53:21,961 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:53:21,979 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:53:22,014 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-10-13 19:53:29,097 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 1168 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:53:29,103 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:53:29,108 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:53:29,472 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:53:29,473 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:53:32,217 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:53:32,393 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interface.
+2024-10-13 19:53:33,242 [INFO] org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=ba29a791-b18f-329a-957c-f33c3becfc6e
+2024-10-13 19:53:35,328 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:53:35,365 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:53:35,368 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:53:35,627 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:53:35,629 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6153 ms
+2024-10-13 19:53:35,656 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:53:35,682 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2024-10-13 19:53:35,960 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2024-10-13 19:53:36,310 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:53:36,506 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:53:36,672 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:53:38,965 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:53:39,053 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:53:39,970 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7999f7fb
+2024-10-13 19:53:39,988 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:53:40,168 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:53:42,723 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:53:42,883 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:53:43,872 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 19:53:43,951 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-10-13 19:53:44,759 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2024-10-13 19:53:45,031 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 19:53:45,132 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 19:53:45,209 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 19:53:45,873 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8084 (http) with context path '/'
+2024-10-13 19:53:46,136 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Started OrderServiceApplication in 18.846 seconds (process running for 20.25)
+2024-10-13 19:53:56,473 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Starting CustomerServiceApplication using Java 17.0.12 with PID 11152 (D:\Aj\digiShopKart\digishopkart-microservice\customer-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:53:56,480 [DEBUG] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:53:56,483 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:53:56,724 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:53:56,725 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:53:59,105 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:53:59,349 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 211 ms. Found 2 JPA repository interfaces.
+2024-10-13 19:54:02,497 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8081 (http)
+2024-10-13 19:54:02,528 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:54:02,528 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:54:02,675 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:54:02,676 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5950 ms
+2024-10-13 19:54:03,535 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:54:03,681 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:54:03,773 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:54:04,572 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:54:04,926 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:54:06,489 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c702dad
+2024-10-13 19:54:06,493 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:54:06,653 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:54:06,668 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-10-13 19:54:10,193 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:54:10,437 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:54:11,663 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 19:54:11,860 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 8 mappings in 'requestMappingHandlerMapping'
+2024-10-13 19:54:12,123 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 19:54:12,200 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 19:54:12,272 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 19:54:12,536 [WARN] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-10-13 19:54:12,611 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8081 (http) with context path '/'
+2024-10-13 19:54:12,634 [INFO] com.digishopkart.customer_service.CustomerServiceApplication [restartedMain] Started CustomerServiceApplication in 17.778 seconds (process running for 20.241)
+2024-10-13 19:54:19,571 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-6] GET "/digi/product/fetch?id=1", parameters={masked}
+2024-10-13 19:54:19,573 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-6] Mapped to com.digishopkart.product_service.controller.ProductController#fetchProduct(Long)
+2024-10-13 19:54:19,582 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-6] fetchProductByIdService: Product :com.digishopkart.product_service.entity.Product@706f162b
+2024-10-13 19:54:19,583 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:54:19,583 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-6] Writing [com.digishopkart.product_service.entity.Product@706f162b]
+2024-10-13 19:54:19,623 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-6] Completed 200 OK
+2024-10-13 19:54:34,758 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8084-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 19:54:34,766 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] Initializing Servlet 'dispatcherServlet'
+2024-10-13 19:54:34,768 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] Detected StandardServletMultipartResolver
+2024-10-13 19:54:34,769 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] Detected AcceptHeaderLocaleResolver
+2024-10-13 19:54:34,777 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] Detected FixedThemeResolver
+2024-10-13 19:54:34,782 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6e43ffc7
+2024-10-13 19:54:34,818 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] Detected org.springframework.web.servlet.support.SessionFlashMapManager@1d09215f
+2024-10-13 19:54:34,819 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 19:54:34,829 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] Completed initialization in 61 ms
+2024-10-13 19:54:35,060 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] POST "/digi/order/placeOrder?customerId=1&productId=1&discountCouponId=1&varientId=2", parameters={masked}
+2024-10-13 19:54:35,113 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-2] Mapped to com.digishopkart.order_service.controller.OrderController#placeOrder(Long, Long, Long, Long)
+2024-10-13 19:54:35,448 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-2] placeOrderService : customerId1, productId1, discountCouponId1, varientId2
+2024-10-13 19:54:35,493 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-2] customerUrl :http://localhost:8081/digi 
+2024-10-13 19:54:35,731 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 19:54:35,734 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-10-13 19:54:35,739 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected StandardServletMultipartResolver
+2024-10-13 19:54:35,739 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected AcceptHeaderLocaleResolver
+2024-10-13 19:54:35,740 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected FixedThemeResolver
+2024-10-13 19:54:35,743 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2f75f09
+2024-10-13 19:54:35,744 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@6ce0debd
+2024-10-13 19:54:35,745 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 19:54:35,749 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Completed initialization in 10 ms
+2024-10-13 19:54:35,825 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] GET "/digi/customer/fetch?id=1", parameters={masked}
+2024-10-13 19:54:35,859 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8081-exec-1] Mapped to com.digishopkart.customer_service.controller.CustomerController#fetchCustomer(Long)
+2024-10-13 19:54:36,492 [INFO] com.digishopkart.customer_service.service.CustomerService [http-nio-8081-exec-1] fetchCustomerById: res:com.digishopkart.customer_service.entity.Customer@168b73e2
+2024-10-13 19:54:36,648 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:54:36,666 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8081-exec-1] Writing [com.digishopkart.customer_service.entity.Customer@168b73e2]
+2024-10-13 19:54:36,768 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Completed 200 OK
+2024-10-13 19:54:36,955 [DEBUG] org.springframework.web.client.HttpMessageConverterExtractor [http-nio-8084-exec-2] Reading to [com.digishopkart.order_service.dto.Customer]
+2024-10-13 19:54:37,001 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-8] GET "/digi/product/fetch?id=1", parameters={masked}
+2024-10-13 19:54:37,012 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8082-exec-8] Mapped to com.digishopkart.product_service.controller.ProductController#fetchProduct(Long)
+2024-10-13 19:54:37,025 [INFO] com.digishopkart.product_service.services.ProductService [http-nio-8082-exec-8] fetchProductByIdService: Product :com.digishopkart.product_service.entity.Product@72d57d2
+2024-10-13 19:54:37,027 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-8] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:54:37,028 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8082-exec-8] Writing [com.digishopkart.product_service.entity.Product@72d57d2]
+2024-10-13 19:54:37,047 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8082-exec-8] Completed 200 OK
+2024-10-13 19:54:37,062 [DEBUG] org.springframework.web.client.HttpMessageConverterExtractor [http-nio-8084-exec-2] Reading to [com.digishopkart.order_service.dto.Product]
+2024-10-13 19:54:37,078 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-6] GET "/digi/discount/fetchCoupon?id=1", parameters={masked}
+2024-10-13 19:54:37,079 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8083-exec-6] Mapped to com.digishopkart.discount_service.controller.DiscountCouponController#fetchDiscountCoupon(Long)
+2024-10-13 19:54:37,102 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [http-nio-8083-exec-6] fetchDiscountCouponByIdService: res : DiscountCoupon(id=1, couponType=PERCENTAGE, value=30.0)
+2024-10-13 19:54:37,105 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8083-exec-6] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:54:37,105 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8083-exec-6] Writing [DiscountCoupon(id=1, couponType=PERCENTAGE, value=30.0)]
+2024-10-13 19:54:37,107 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8083-exec-6] Completed 200 OK
+2024-10-13 19:54:37,115 [DEBUG] org.springframework.web.client.HttpMessageConverterExtractor [http-nio-8084-exec-2] Reading to [com.digishopkart.order_service.dto.DiscountCoupon]
+2024-10-13 19:54:37,116 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-2] placeOrderService: customerResponse : Customer(id=1, name=Ajay, gender=MALE, email=ajay@gmail.com, mobile=9999999111, status=true, customerAddressList=[CustomerAddress(id=1, fullname=Ajay Somnath Kate, country=India, state=Mah, town=Pune, area=Kharadi, houseOrBuilding=Sai parasad, landmark=Tuljabhawani mandir, pinCode=411014, mobile=9876313111, addressType=CURRENT), CustomerAddress(id=2, fullname=Ajay Somnath Kate1, country=India, state=mah, town=Indapur, area=sarati, houseOrBuilding=my house, landmark=Near jijamata Petrolium, pinCode=413103, mobile=8334343344, addressType=PERMENANT)])
+2024-10-13 19:54:37,137 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-2] placeOrderService: productResponse : Product(id=1, productName=Formal Shirt, brand=Adidas, productPrice=1699.0, availability=true, varientList=[Varient(id=1, name=Size, value=S, availability=true), Varient(id=2, name=Size, value=M, availability=true), Varient(id=3, name=Size, value=L, availability=true), Varient(id=4, name=Size, value=XL, availability=true), Varient(id=5, name=Size, value=XXL, availability=false)])
+2024-10-13 19:54:37,139 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-2] placeOrderService: discountCouponResponse: DiscountCoupon(id=1, couponType=PERCENTAGE, value=30.0) : 
+2024-10-13 19:54:37,140 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-2] createOrder :PERCENTAGE final price : 1189.3
+2024-10-13 19:54:37,347 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-2] placeOrderService : Plcaed order :Order(id=102, createdDate=2024-10-13T19:54:37.141655500, updatedDate=2024-10-13T19:54:37.141655500, active=true, orderStatus=PLACED, fullName=Ajay, address=Sai parasad, Kharadi, Tuljabhawani mandir, Pune, , Mah, India, 411014, finalPrice=1189.3, productName=Formal Shirt, varientDetails=Size, M)
+2024-10-13 19:54:37,407 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-2] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:54:37,411 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-2] Writing [Order(id=102, createdDate=2024-10-13T19:54:37.141655500, updatedDate=2024-10-13T19:54:37.141655500,  (truncated)...]
+2024-10-13 19:54:37,440 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-2] Completed 200 OK
+2024-10-13 19:54:55,606 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-3] GET "/digi/order/getAll?pageNo=0&pageSize=10", parameters={masked}
+2024-10-13 19:54:55,609 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-3] Mapped to com.digishopkart.order_service.controller.OrderController#getAllOrders(Integer, Integer)
+2024-10-13 19:54:56,079 [WARN] org.springframework.data.web.config.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [http-nio-8084-exec-3] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-10-13 19:54:56,094 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-3] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:54:56,096 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-3] Writing [Page 1 of 1 containing com.digishopkart.order_service.entity.Order instances]
+2024-10-13 19:54:56,149 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-3] Completed 200 OK
+2024-10-13 19:58:41,397 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:58:41,403 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:58:41,421 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-10-13 19:58:54,470 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Starting OrderServiceApplication using Java 17.0.12 with PID 10620 (D:\Aj\digiShopKart\digishopkart-microservice\order-service\target\classes started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\customer-service)
+2024-10-13 19:58:54,492 [DEBUG] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-10-13 19:58:54,499 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-10-13 19:58:54,744 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-13 19:58:54,744 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-13 19:58:57,109 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:58:57,120 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-10-13 19:58:57,175 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-10-13 19:58:57,311 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-13 19:58:57,508 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interface.
+2024-10-13 19:58:58,262 [INFO] org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=ba29a791-b18f-329a-957c-f33c3becfc6e
+2024-10-13 19:59:00,884 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port 8084 (http)
+2024-10-13 19:59:00,922 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2024-10-13 19:59:00,923 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-13 19:59:01,106 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-10-13 19:59:01,107 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6360 ms
+2024-10-13 19:59:01,520 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-13 19:59:01,724 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-13 19:59:01,883 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-10-13 19:59:03,024 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-13 19:59:03,109 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-10-13 19:59:03,907 [INFO] com.zaxxer.hikari.pool.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17948fcd
+2024-10-13 19:59:03,914 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-10-13 19:59:04,062 [WARN] org.hibernate.orm.deprecation [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-13 19:59:06,327 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-13 19:59:06,423 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 19:59:07,274 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-13 19:59:07,340 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-10-13 19:59:07,828 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [restartedMain] 4 mappings in 'requestMappingHandlerMapping'
+2024-10-13 19:59:08,044 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [restartedMain] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-10-13 19:59:08,132 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-10-13 19:59:08,209 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-10-13 19:59:08,797 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port 8084 (http) with context path '/'
+2024-10-13 19:59:09,079 [INFO] com.digishopkart.order_service.OrderServiceApplication [restartedMain] Started OrderServiceApplication in 16.162 seconds (process running for 17.666)
+2024-10-13 19:59:21,621 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8084-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-13 19:59:21,623 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-10-13 19:59:21,624 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected StandardServletMultipartResolver
+2024-10-13 19:59:21,624 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected AcceptHeaderLocaleResolver
+2024-10-13 19:59:21,625 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected FixedThemeResolver
+2024-10-13 19:59:21,626 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@598ce03d
+2024-10-13 19:59:21,627 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@2f88d945
+2024-10-13 19:59:21,628 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-10-13 19:59:21,628 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Completed initialization in 4 ms
+2024-10-13 19:59:21,646 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] GET "/digi/order/getAll?pageNo=0&pageSize=10", parameters={masked}
+2024-10-13 19:59:21,675 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-1] Mapped to com.digishopkart.order_service.controller.OrderController#getAllOrders(Integer, Integer)
+2024-10-13 19:59:21,723 [ERROR] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-1] Exception : {}
+java.lang.ArithmeticException: / by zero
+	at com.digishopkart.order_service.services.OrderService.getAllOrdersByPagging(OrderService.java:128)
+	at com.digishopkart.order_service.controller.OrderController.getAllOrders(OrderController.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-10-13 19:59:21,817 [WARN] org.springframework.data.web.config.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier [http-nio-8084-exec-1] Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-10-13 19:59:21,847 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-1] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:59:21,850 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-1] Nothing to write: null body
+2024-10-13 19:59:21,863 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-1] Completed 500 INTERNAL_SERVER_ERROR
+2024-10-13 19:59:44,253 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-5] POST "/digi/order/placeOrder?customerId=1&productId=1&discountCouponId=1&varientId=2", parameters={masked}
+2024-10-13 19:59:44,254 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [http-nio-8084-exec-5] Mapped to com.digishopkart.order_service.controller.OrderController#placeOrder(Long, Long, Long, Long)
+2024-10-13 19:59:44,257 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-5] placeOrderService : customerId1, productId1, discountCouponId1, varientId2
+2024-10-13 19:59:44,292 [INFO] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-5] customerUrl :http://localhost:8081/digi 
+2024-10-13 19:59:44,328 [ERROR] com.digishopkart.order_service.services.OrderService [http-nio-8084-exec-5] Exception:{}
+feign.RetryableException: Connection refused: no further information executing GET http://localhost:8081/digi/customer/fetch?id=1
+	at feign.FeignException.errorExecuting(FeignException.java:278)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:110)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:99)
+	at jdk.proxy4/jdk.proxy4.$Proxy130.getCustomerById(Unknown Source)
+	at com.digishopkart.order_service.services.OrderService.placeOrderService(OrderService.java:57)
+	at com.digishopkart.order_service.controller.OrderController.placeOrder(OrderController.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1686)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1610)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529)
+	at feign.Client$Default.convertResponse(Client.java:111)
+	at feign.Client$Default.execute(Client.java:107)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:100)
+	... 55 common frames omitted
+2024-10-13 19:59:44,374 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-5] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-10-13 19:59:44,375 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [http-nio-8084-exec-5] Nothing to write: null body
+2024-10-13 19:59:44,375 [DEBUG] org.springframework.web.servlet.DispatcherServlet [http-nio-8084-exec-5] Completed 500 INTERNAL_SERVER_ERROR
+2024-10-13 20:00:07,412 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-13 20:00:07,419 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-10-13 20:00:07,437 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
