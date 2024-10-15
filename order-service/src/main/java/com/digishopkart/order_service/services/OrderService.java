@@ -6,6 +6,7 @@ import com.digishopkart.order_service.entity.Order;
 import com.digishopkart.order_service.enums.AddressType;
 import com.digishopkart.order_service.enums.CouponType;
 import com.digishopkart.order_service.repository.OrderRepository;
+import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Slf4j
+@Log4j2
 @Service
 public class OrderService {
 
@@ -68,7 +69,7 @@ public class OrderService {
             return res;
 
         } catch (Exception e) {
-            log.error("Exception:{}",e);
+            log.error("Exceptionnn:{}",e);
             return null;
         }
     }
