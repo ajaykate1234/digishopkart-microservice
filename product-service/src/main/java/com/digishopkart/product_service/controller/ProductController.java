@@ -19,7 +19,7 @@ public class ProductController {
     private ProductService productService;
 
     @PostMapping("/product/add")
-    public ResponseEntity<Product> addProduct(@RequestBody Product product){
+    public ResponseEntity<Product> addProduct(@RequestBody Product product) throws Exception {
 
        Product res =  productService.addProductService(product);
        return new ResponseEntity<>(res, HttpStatus.OK);
@@ -27,21 +27,21 @@ public class ProductController {
 
     @PutMapping("/product/update")
     public ResponseEntity<Product> updateProduct(@RequestParam("id") Long id,
-                                              @RequestBody Product product){
+                                              @RequestBody Product product) throws Exception {
 
         Product res =  productService.updateProductService(id,product);
         return new ResponseEntity<>(res, HttpStatus.OK);
     }
 
     @GetMapping("/product/fetch")
-    public ResponseEntity<Product> fetchProduct(@RequestParam("id") Long id){
+    public ResponseEntity<Product> fetchProduct(@RequestParam("id") Long id) throws Exception {
 
         Product res =  productService.fetchProductByIdService(id);
         return new ResponseEntity<>(res, HttpStatus.OK);
     }
 
     @DeleteMapping("/product/delete")
-    public ResponseEntity<String> deleteProduct(@RequestParam("id") Long id){
+    public ResponseEntity<String> deleteProduct(@RequestParam("id") Long id) throws Exception {
 
         String res =  productService.deleteProductByIdService(id);
         return new ResponseEntity<>(res, HttpStatus.OK);

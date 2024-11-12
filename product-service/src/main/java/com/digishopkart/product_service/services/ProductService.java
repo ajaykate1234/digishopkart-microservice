@@ -1,6 +1,7 @@
 package com.digishopkart.product_service.services;
 
 import com.digishopkart.product_service.entity.Product;
+import com.digishopkart.product_service.exception.ResourceNotFoundException;
 import com.digishopkart.product_service.repository.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +19,7 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    public Product addProductService(Product product) {
+    public Product addProductService(Product product) throws Exception {
         try {
 
             Product res = productRepository.save(product);
@@ -26,40 +27,54 @@ public class ProductService {
             return res;
         } catch (Exception e) {
             log.error("addProductService: Exception :{}", e);
-            return null;
+            throw new Exception(e.getMessage());
         }
     }
 
-    public Product fetchProductByIdService(Long id) {
+    public Product fetchProductByIdService(Long id) throws Exception {
         try {
+
             Optional<Product> optionalProduct = productRepository.findById(id);
             if (optionalProduct.isPresent()) {
-                log.info("fetchProductByIdService: Product :{}",optionalProduct.get());
+                log.info("fetchProductByIdService: Product :{}", optionalProduct.get());
+                int i=9/0;
                 return optionalProduct.get();
-            }
-            return null;
-        }catch (Exception e){
-            log.error("fetchProductByIdService : Exception :{}",e);
-            return null;
-        }
 
+            } else {
+                log.info("fetchProductByIdService: Product not found in db");
+                throw new ResourceNotFoundException("Product Not Found in database...!!!");
+            }
+        }catch(ResourceNotFoundException e){
+           log.info("fetchProductByIdService: exception:{}",e);
+           throw e;
+        }
+        catch (Exception e){
+            log.error("fetchProductByIdService : Exception :{}",e);
+            throw new Exception(e.getMessage());
+        }
     }
 
-    public String deleteProductByIdService(Long id) {
+    public String deleteProductByIdService(Long id) throws Exception {
         try {
             Optional<Product> optionalProduct = productRepository.findById(id);
             if (optionalProduct.isPresent()) {
                 productRepository.delete(optionalProduct.get());
                 return "Product deleted successfully";
+            }else {
+                throw new ResourceNotFoundException("Product Not Found in database...!!!");
             }
-            return "product not found for id: "+id;
-        }catch (Exception e){
+            //return "product not found for id: "+id;
+        }catch(ResourceNotFoundException e){
+            log.info("deleteProductByIdService : exception:{}",e);
+            throw e;
+        }
+        catch (Exception e){
             log.error("deleteProductByIdService : Exception :{}",e);
-            return null;
+            throw new Exception(e.getMessage());
         }
     }
 
-    public Product updateProductService(Long id, Product product) {
+    public Product updateProductService(Long id, Product product) throws Exception {
         try {
             Optional<Product> optionalProduct = productRepository.findById(id);
             if (optionalProduct.isPresent()){
@@ -67,12 +82,18 @@ public class ProductService {
                 Product res = productRepository.save(product);
                 log.info("updateProductService: res:{}",res);
                 return res;
+            }else {
+                log.info("product not found for id:{}",id);
+                throw new ResourceNotFoundException("Product Not Found in database...!!!");
             }
-            log.info("product not found for id:{}",id);
-            return null;
-        }catch (Exception e){
-            log.error("updateProductService: Exception :{}",e);
-            return null;
+
+        }catch(ResourceNotFoundException e){
+            log.info("updateProductService: exception:{}",e);
+            throw e;
+        }
+        catch (Exception e){
+            log.error("updateProductService : Exception :{}",e);
+            throw new Exception(e.getMessage());
         }
     }
 
