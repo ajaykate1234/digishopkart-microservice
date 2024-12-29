@@ -37,7 +37,7 @@ public class ProductService {
             Optional<Product> optionalProduct = productRepository.findById(id);
             if (optionalProduct.isPresent()) {
                 log.info("fetchProductByIdService: Product :{}", optionalProduct.get());
-                int i=9/0;
+               // int i=9/0;
                 return optionalProduct.get();
 
             } else {
