@@ -1,7 +1,7 @@
 <template>
-    <h4>Add product</h4>
+    <h4>Update product</h4>
     <div class="form">
-        <form  @submit.prevent="addProduct">
+        <form  @submit.prevent="editProduct">
             <table class="table table-bordered">
                 <thead>
                     <th>Fields</th>
@@ -47,28 +47,20 @@
                             </select>
                         </td>     
                     </tr>
-                    <tr>
-                        <td>Product Image</td>
-                        <td>
-                            <input type="file" id="file"/>
-                        </td>
-                    </tr>
                     <tr >
-                       <td>Enter Number of Varient to Add </td> <td><input type="number" v-model="this.varientCount" @change="updateVarients()"  min="0" required> </td> 
-                    </tr>
-                    <tr>       
+                        Enter Number of Varient to Add : <input type="number" v-model="varientCount" min="0" required>
+                           
                         <div v-for="(variant, index) in this.product.varientList" :key="index">
                             <h6>Varients {{ index + 1 }}</h6>
                         <td>
-                            <label :for="varientName">varientName</label>
+                            <label for="varientName">varientName</label>
                         </td>
                         <td>
-                            <!-- <input type="text"  :id="'varientName' + index" v-model="this.product.varientList[index].name" placeholder="Enter Product varientName" required> -->
-                             <input type="text"  :id="'varientName' + index" v-model="this.product.varientList[index].name" placeholder="Enter Product varientName" required>
+                            <input type="text"  :id="'varientName' + index" v-model="this.product.varientList[index].name" placeholder="Enter Product varientName" required>
                         </td>
-                            
+
                         <td>
-                            <label :for="varientValue">varientValue</label>
+                            <label for="varientValue">varientValue</label>
                         </td>
                         <td>
                             <input type="text" :id="'varientValue' + index" v-model="this.product.varientList[index].value" placeholder="Enter Product varientValue" required>
@@ -76,7 +68,13 @@
                         </div>
                     </tr>
 
-                   
+                    <tr>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                    </tr>
                     <tr>
                         <td colspan="2">
                             <button type="submit" class="btn btn-success align-center">Submit Coupon</button>
@@ -117,41 +115,47 @@ export default{
                 },
                 successMessage:"",
                 errorMessage:"",
-                varientCount:null,
+                variantCount:1,
         }
     },
 
     mounted(){
         console.log("Mounted");
-        // // Add global event listeners for mouse and key events
-        // window.addEventListener("mousemove", this.handleGlobalEvents);
-        // window.addEventListener("keydown", this.handleGlobalEvents);
-        // window.addEventListener("keyup", this.handleGlobalEvents);
+        this.getProduct(this.$route.params.id);
     },
 
     methods:{
+        getProduct(productId){
 
-        addProduct(){
-            console.log("inside addProduct : ",this.product);
-            
-            axios.post(`http://localhost:8082/digi/product/add`,this.product).then(res=>{
+            axios.get(`http://localhost:8082/digi/product/fetch?id=${productId}`).then(response=>{
+                console.log("Response ::",response);
+                this.product = response.data
+            }).catch((err)=>{
+                console.log("Error: ",err);
+                
+            })
+
+        },
+
+        editProduct(){
+            console.log("inside editProduct : ",this.product);
+            axios.put(`http://localhost:8082/digi/product/update?id=${this.product.id}`,this.product).then(res=>{
                 console.log("Product Added: ",res);
-                this.successMessage = "Coupon submitted successfully!";
-                this.errorMessage = "";  
+                this.successMessage = "Product Updated successfully!";
+                this.errorMessage = "";
                 
                 
             })
             .catch((error)=>{
                 console.log("Error : ",error);
-                 this.errorMessage = "Failed to submit the coupon. Please try again.";
+                 this.errorMessage = "Failed to Update Product. Please try again.";
                 this.successMessage = "";
             })
             
         },
 
         updateVarients(){
-            console.log("$$$$$$$$$$$");
-            
+     
             
             const count = parseInt(this.varientCount);
             console.log("inside updateVarients: count = ",count);

@@ -7,59 +7,12 @@
         </div>
 
         <div class="card-body">
-            <!-- <table class="table table-bordered">
-                <thead class="align-center">
-                    <tr>
-                        <th>Id</th>
-                        <th>Product Name</th>
-                        <th>Brand</th>
-                        <th>Price</th>
-                        <th>Availability</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr v-for="(product, index) in this.products" :key="index">
-                        <td>{{ product.id }}</td>
-                        <td>{{ product.productName }}</td>
-                        <td>{{ product.brand }}</td>
-                        <td>{{ product.productPrice }}</td>
-                        <td>{{ product.availability }}</td> 
-                        <td>
-                            <button class="btn btn-primary">Show Varients</button> &nbsp;&nbsp;
-                            <button class="btn btn-success">Edit Product</button> &nbsp;&nbsp;
-                            <button class="btn btn-danger">Delete</button>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table> -->
-
-
-            <!-- <table class="table">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>VarientName</th>
-                        <th>VarientValue</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr v-for="varient in this.products.varientList" :key="varient.id">
-                        <td>{{ varient.id }}</td>
-                        <td>{{ varient.name }}</td>
-                        <td>{{ varient.value }}</td>
-                    </tr>
-                </tbody>
-            </table> -->
-
             <table class="table table-bordered">
                 <thead >
                     <tr>
                         <th>Product Id</th>
                         <th>Product Name</th>
+                        <th>Image</th>
                         <th>Brand</th>
                         <th>Price</th>
                         <th>Availability</th>
@@ -71,11 +24,17 @@
                     <tr v-for="product in products" :key="product.id">
                         <td>{{ product.id }}</td>
                         <td>{{ product.productName || 'N/A' }}</td>
+                        <td>
+                            <!-- Displaying the image from the byte[] -->
+                            <div v-if="product.productImage">
+                              <img :src="imageSrc(product.productImage)" height="auto" weight="auto" alt="Product Image" />
+                            </div>
+                        </td>
                         <td>{{ product.brand }}</td>
                         <td>{{ product.productPrice }}</td>
                         <td>{{ product.availability ? 'In Stock' : 'Out Of Stock' }}</td>
                         <td>
-                            <table class="table table-sm">
+                            <table class="table table-bordered">
                                 <thead>
                                     <tr>
                                         <th>Variant Id</th>
@@ -96,8 +55,8 @@
                         </td>
 
                         <td>
-                            <button class="btn btn-success">Edit</button> &nbsp;&nbsp;
-                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-success"><RouterLink :to="{path:'/product/'+product.id+'/edit'}">Edit</RouterLink></button> &nbsp;&nbsp;
+                            <button class="btn btn-danger" @click="deleteProduct(product.id)">Delete</button>
                         </td>
                        
                     </tr>
@@ -125,6 +84,7 @@ export default {
                     productPrice: 1299.0,
                     availability: true,
                     varientList: [],
+                    productImage:'',
                 },
                 {
                     id: 2,
@@ -139,7 +99,9 @@ export default {
                         { id: 9, name: "Size", value: "XL", availability: null },
                         { id: 10, name: "Size", value: "XXL", availability: null },
                     ],
-                }]
+                    productImage: '',
+                }],
+                
         };
     },
 
@@ -152,11 +114,30 @@ export default {
     methods: {
 
         getProducts() {
-            axios.get(`http://localhost:8082/digi/product/fetchAll?pageNo=0&pageSize=5`).then(res => {
+            axios.get(`http://localhost:8082/digi/product/fetchAll?pageNo=0&pageSize=20`).then(res => {
                 console.log("Response :", res);
                 this.products = res.data.content
 
             })
+        }, 
+
+        deleteProduct(id){
+            axios.delete(`http://localhost:8082/digi/product/delete?id=${id}`).then(res=>{
+                console.log("Response :", res);
+                alert(res.data);
+                window.location.reload();
+            }).catch((error)=>{
+                console.log("Errorr : ",error.response.data);
+                alert("Error : "+error.response.data)
+                
+            })
+        },
+
+        imageSrc(productImage) {
+            if (productImage) {
+                return `data:image/jpeg;base64,${productImage}`;
+            }
+            return '';
         }
     }
 }
