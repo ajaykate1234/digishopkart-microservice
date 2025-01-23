@@ -139,6 +139,7 @@ export default{
 
         editProduct(){
             console.log("inside editProduct : ",this.product);
+            // this.product.isExpired=false
             axios.put(`http://localhost:8082/digi/product/update?id=${this.product.id}`,this.product).then(res=>{
                 console.log("Product Added: ",res);
                 this.successMessage = "Product Updated successfully!";

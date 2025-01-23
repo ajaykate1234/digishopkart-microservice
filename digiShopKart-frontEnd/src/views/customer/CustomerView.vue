@@ -78,24 +78,24 @@ export default{
             customers:[
                 {
                     id:null,
-                    name:'',
-                    gender:'',
-                    email:'',
-                    mobile:'',
+                    name:'Ajay Kate',
+                    gender:'Male',
+                    email:'ajaykate@gmail.com',
+                    mobile:'9000000001',
                     status:'',
                     customerAddressList:[
                         {
                             id:null,
-                            fullname:'',
-                            country:'',
-                            state:'',
-                            town:'',
-                            area:'',
-                            houseOrBuilding:'',
-                            landmark:'',
-                            pinCode:'',
-                            mobile:'',
-                            addressType:''
+                            fullname:'Ajay Kate',
+                            country:'India',
+                            state:'Maharashtra',
+                            town:'Pune',
+                            area:'Kharadi',
+                            houseOrBuilding:'Sai Prasad Building',
+                            landmark:'near to Vandana Residency',
+                            pinCode:'4101014',
+                            mobile:'9000000001',
+                            addressType:'BillingAddress'
                         }
                     ]
                 },

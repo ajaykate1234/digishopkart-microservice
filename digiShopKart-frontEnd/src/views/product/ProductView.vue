@@ -40,7 +40,7 @@
                                         <th>Variant Id</th>
                                         <th>Name</th>
                                         <th>Value</th>
-                                        <th>Availability</th>
+                                        <!-- <th>Availability</th> -->
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -48,7 +48,7 @@
                                         <td>{{ variant.id }}</td>
                                         <td>{{ variant.name }}</td>
                                         <td>{{ variant.value }}</td>
-                                        <td>{{ variant.availability !== null ? (variant.availability ? 'In Stock' : 'Out Of Stock') : 'N/A' }}</td>
+                                        <!-- <td>{{ variant.availability !== null ? (variant.availability ? 'In Stock' : 'Out Of Stock') : 'N/A' }}</td> -->
                                     </tr>
                                 </tbody>
                             </table>
@@ -79,25 +79,28 @@ export default {
             products: [
                 {
                     id: 1,
-                    productName: "T-Shirt",
-                    brand: "Adidas",
-                    productPrice: 1299.0,
+                    productName: "Laptop",
+                    brand: "Dell",
+                    productPrice: 60000.0,
                     availability: true,
-                    varientList: [],
+                    varientList: [
+                         { id: 1, name: "RAM", value: "8GB", availability: true },
+                         { id: 2, name: "Storage", value: "1TB", availability: null },
+                         { id: 3, name: "Processor", value: "intel-i5", availability: null },
+                         { id: 4, name: "Colour", value: "Silver", availability: null },
+                    ],
                     productImage:'',
                 },
                 {
                     id: 2,
-                    productName: null,
+                    productName: "T-Shirt",
                     brand: "Adidas",
                     productPrice: 1699.0,
-                    availability: true,
+                    availability: false,
                     varientList: [
-                        { id: 6, name: "Size", value: "S", availability: null },
-                        { id: 7, name: "Size", value: "M", availability: null },
-                        { id: 8, name: "Size", value: "L", availability: null },
-                        { id: 9, name: "Size", value: "XL", availability: null },
-                        { id: 10, name: "Size", value: "XXL", availability: null },
+                        { id: 1, name: "Size", value: "XL", availability: null },
+                        { id: 2, name: "Colour", value: "Red", availability: null },
+                        { id: 3, name: "Material", value: "Cotton", availability: null },
                     ],
                     productImage: '',
                 }],
@@ -106,6 +109,8 @@ export default {
     },
 
     mounted() {
+        
+        this.test();
         console.log("fdfd");
         this.getProducts();
 
@@ -138,6 +143,32 @@ export default {
                 return `data:image/jpeg;base64,${productImage}`;
             }
             return '';
+        },
+
+        test(){
+            console.log("insode test");
+
+            let nums = [1,2,3,44,5];
+
+            let letters =['A','B'];
+
+            letters.push('C')
+            letters.push('D')
+
+            letters.unshift('E')
+
+            letters.shift()
+            letters.pop()
+
+            console.log(letters[0]);
+            console.log("😒",nums[3]);
+
+            console.log("Let :",letters);
+
+
+            
+            
+            
         }
     }
 }

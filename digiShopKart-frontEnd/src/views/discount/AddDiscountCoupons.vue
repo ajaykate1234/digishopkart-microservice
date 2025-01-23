@@ -11,7 +11,6 @@
                     
                 <label for="value">Discount Value:</label>
                     <input type="number" id="value" v-model="discountCoupon.value" placeholder="Enter discount value" required/>
-
                 <div>
                     <button type="submit" class="btn btn-success">Submit Coupon</button>
                 </div>    

@@ -5,6 +5,9 @@ import AddDiscountCoupons from '@/views/discount/AddDiscountCoupons.vue'
 import EditDiscountCoupon from '@/views/discount/EditDiscountCoupon.vue'
 import ProductView from '@/views/product/ProductView.vue'
 import AddProduct from '@/views/product/AddProduct.vue'
+import EditProduct from '@/views/product/EditProduct.vue'
+import CustomerView from '@/views/customer/CustomerView.vue'
+import ShoppingDashboard from '@/views/shopping/ShoppingDashboard.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,7 +53,26 @@ const router = createRouter({
       path: '/product/add',
       name: 'AddProduct',
       component: AddProduct
-    }
+    },
+    {
+      path: '/product/:id/edit',
+      name: 'EditProduct',
+      component: EditProduct
+    },
+
+    // Customers
+    {
+      path: '/customers',
+      name: 'CustomerView',
+      component: CustomerView
+    },
+
+    // Shopping tabs
+    {
+      path:'/digi/shopping',
+      name:'ShoppigDashboard',
+      component:ShoppingDashboard
+    },
   ],
 })
 
