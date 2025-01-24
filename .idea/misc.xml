@@ -11,10 +11,12 @@
         <option value="$PROJECT_DIR$/discount-service/pom.xml" />
         <option value="$PROJECT_DIR$/Registry-Service/pom.xml" />
         <option value="$PROJECT_DIR$/Payment-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Definedge project/KYC_Project/DSBLKYC/kycproj-service/pom.xml" />
+        <option value="$PROJECT_DIR$/subscription-service/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

@@ -53,7 +53,10 @@
       <section class="body-content">Body Content
         <RouterView />
       </section>
-      <aside class="right-sidebar">Right Sidebar</aside>
+      <aside class="right-sidebar">
+        <!-- <RouterLink class="nav-to" to="/rightSideBar">  Right Sidebar</RouterLink> -->
+        <RouterLink class="nav-to" to="/openKart">  Open Kart</RouterLink>
+      </aside>
     </div>
     <footer class="footer">Footer</footer>
   </div>

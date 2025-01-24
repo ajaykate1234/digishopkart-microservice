@@ -8,6 +8,8 @@ import AddProduct from '@/views/product/AddProduct.vue'
 import EditProduct from '@/views/product/EditProduct.vue'
 import CustomerView from '@/views/customer/CustomerView.vue'
 import ShoppingDashboard from '@/views/shopping/ShoppingDashboard.vue'
+import RightSideBar from '@/components/RightSideBar.vue'
+import OpenKart from '@/views/kart/OpenKart.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +18,16 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+    },
+    {
+      path:'/rightSideBar',
+      name:'RightSideBar',
+      component: RightSideBar,
+    },
+    {
+      path:'/openKart',
+      name:'OpenKart',
+      component: OpenKart,
     },
     {
       path: '/about',

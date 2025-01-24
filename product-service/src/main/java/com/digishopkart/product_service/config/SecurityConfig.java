@@ -28,7 +28,7 @@ public class SecurityConfig {
                         auth
                             .requestMatchers("/admin")
                             .authenticated()
-                            .requestMatchers("/auth/login")
+                            .requestMatchers("/auth/login","/digi/kart/**","/digi/product/**")
                             .permitAll().anyRequest().authenticated())
                 .exceptionHandling(ex->ex.authenticationEntryPoint(point))
                 .sessionManagement(session-> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));

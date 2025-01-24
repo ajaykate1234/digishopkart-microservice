@@ -1,6 +1,7 @@
 package com.digishopkart.product_service.services;
 
 import com.digishopkart.product_service.entity.Product;
+import com.digishopkart.product_service.entity.Varient;
 import com.digishopkart.product_service.exception.ResourceNotFoundException;
 import com.digishopkart.product_service.repository.ProductRepository;
 import org.slf4j.Logger;
@@ -9,7 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -19,9 +22,9 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    public Product addProductService(Product product) throws Exception {
+    public Product addProductService(Product product, MultipartFile file) throws Exception {
         try {
-
+            product.setProductImage(file.getBytes());
             Product res = productRepository.save(product);
             log.info("addProductService: res:{}", res);
             return res;
@@ -105,6 +108,37 @@ public class ProductService {
         }catch (Exception e){
             log.error("fetchAllProductsService : Exception : {}",e);
             return null;
+        }
+    }
+
+
+    public List<Varient> fetchAllProductVarientsByProductIdService(Long productId) {
+        Optional<Product> optionalProduct=  productRepository.findById(productId);
+        log.info("fetchAllProductVarientsByProductIdService : product :{}",optionalProduct.get());
+        if (optionalProduct.isPresent()){
+            List<Varient>  varientList= optionalProduct.get().getVarientList();
+            log.info("fetchAllProductVarientsByProductIdService : varientList : {}",varientList);
+            if (varientList.size()<=0){
+
+                throw new ResourceNotFoundException("Varient not found for this Product");
+            }
+            return varientList;
+        }else {
+            throw new ResourceNotFoundException("Product not fount for this id");
+        }
+    }
+
+    public Product addVarientsForPreviousProductService(Long productId, List<Varient> varientList) {
+        Optional<Product> optionalProduct=  productRepository.findById(productId);
+        log.info("addVarientsForPreviousProductService : Product: {}",optionalProduct);
+        if (optionalProduct.isPresent()){
+            Product p = optionalProduct.get();
+            p.setVarientList(varientList);
+
+            Product product = productRepository.save(p);
+            return product;
+        }else {
+            throw new ResourceNotFoundException("Product Not found for product Id :"+productId);
         }
     }
 }

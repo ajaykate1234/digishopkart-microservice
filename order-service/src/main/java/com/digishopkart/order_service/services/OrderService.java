@@ -55,12 +55,15 @@ public class OrderService {
 //            ResponseEntity<Product> productResponse = restTemplate.getForEntity(productServiceUrl+"/product/fetch?id="+productId, Product.class);
 //            ResponseEntity<DiscountCoupon> discountCouponResponse = restTemplate.getForEntity(discountServiceUrl+"/discount/fetchCoupon?id="+discountCouponId, DiscountCoupon.class);
 
-            Customer customerResponse = customerServiceClient.getCustomerById(customerId);
-            Product productResponse = productServiceClient.getProductById(productId);
-            DiscountCoupon discountCouponResponse = discountServiceClient.getDiscountCouponByid(discountCouponId);
 
+            // Using FeignClient
+            Customer customerResponse = customerServiceClient.getCustomerById(customerId);
             log.info("placeOrderService: customerResponse : {}",customerResponse);
+
+            Product productResponse = productServiceClient.getProductById(productId);
             log.info("placeOrderService: productResponse : {}",productResponse);
+
+            DiscountCoupon discountCouponResponse = discountServiceClient.getDiscountCouponByid(discountCouponId);
             log.info("placeOrderService: discountCouponResponse: {} : ",discountCouponResponse);
 
             Order order = createOrder(customerResponse,productResponse,discountCouponResponse,varientId);
