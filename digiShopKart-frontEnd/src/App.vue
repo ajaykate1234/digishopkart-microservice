@@ -50,7 +50,7 @@
         </table>
 
       </aside>
-      <section class="body-content">Body Content
+      <section class="body-content">
         <RouterView />
       </section>
       <aside class="right-sidebar">

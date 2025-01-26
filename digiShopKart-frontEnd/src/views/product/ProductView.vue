@@ -1,8 +1,19 @@
 <template>
     <div class="card">
+        <div>
+        <RouterLink to="/product/add" class="btn btn-success float-end add-btn">Add Product</RouterLink>
+
+        <input type="text" v-model="this.searchQuery" placeholder="search product by Name or Brand" class="search-bar">
+        <ul>
+            <li v-for="product in filteredProducts" :key="product.id">
+                {{ product.productName }}
+            </li>
+        </ul>
+        
+    </div>
         <div class="card-header">
             <h4>Products
-                <RouterLink to="/product/add" class="btn btn-success float-end">Add Product</RouterLink>
+                
             </h4>
         </div>
 
@@ -21,7 +32,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="product in products" :key="product.id">
+                    <tr v-for="product in result" :key="product.id">
                         <td>{{ product.id }}</td>
                         <td>{{ product.productName || 'N/A' }}</td>
                         <td>
@@ -104,13 +115,26 @@ export default {
                     ],
                     productImage: '',
                 }],
+                searchQuery:''
                 
         };
     },
 
+    computed:{
+        filteredProducts(){
+            // return this.products.filter(product=>
+            //     product.productName.toLowerCase().includes(this.searchQuery.toLowerCase())
+           this.result= this.products.filter(product=>
+           product.productName.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
+           product.brand.toLowerCase().includes(this.searchQuery.toLowerCase())
+        )
+        //  );
+        }
+    },
+
     mounted() {
+        // console.log("### : ",filteredProducts());
         
-        this.test();
         console.log("fdfd");
         this.getProducts();
 
@@ -143,32 +167,6 @@ export default {
                 return `data:image/jpeg;base64,${productImage}`;
             }
             return '';
-        },
-
-        test(){
-            console.log("insode test");
-
-            let nums = [1,2,3,44,5];
-
-            let letters =['A','B'];
-
-            letters.push('C')
-            letters.push('D')
-
-            letters.unshift('E')
-
-            letters.shift()
-            letters.pop()
-
-            console.log(letters[0]);
-            console.log("😒",nums[3]);
-
-            console.log("Let :",letters);
-
-
-            
-            
-            
         }
     }
 }
@@ -179,6 +177,23 @@ export default {
     margin-bottom: 15px;
 }
 
+.search-bar {
+  padding: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 40px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border-radius: 30%;
+  float: right; 
+}
+
+.add-btn {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
 th {
     font-weight:bold;
 }
