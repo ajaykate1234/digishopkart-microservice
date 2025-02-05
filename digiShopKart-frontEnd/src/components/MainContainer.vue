@@ -134,7 +134,7 @@ export default {
 
     mounted() {
         // console.log("### : ",filteredProducts());
-        
+            
         console.log("fdfd");
         this.getProducts();
 

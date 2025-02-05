@@ -3,7 +3,7 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg "> <!--bg-body-tertiary-->
         <div class="container-fluid"> <img class="circular-image" src="./assets/DigiShopKart_Logo.png" height="70px" width="70px" alt="file not found">
-          <marquee direction="left" style="font-size: large; color: brown; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><-- 🙏😊 Welcome to DigiShopKart Digital Marketing ...</marquee>
+          <marquee direction="left" style="font-size: large; color: brown; font-family: Arial, Helvetica, sans-serif; Unicode', Geneva, Verdana, sans-serif;"><-- 🙏😊 Welcome to DigiShopKart Digital Marketing ...</marquee>
           <RouterLink class="navbar-brand" to="/">
           </RouterLink>
           <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,8 +37,9 @@
       </nav>
     </header>
     <div class="content-wrapper">
-      <aside class="left-sidebar">Left Sidebar
-        <table class="table">
+      <aside class="left-sidebar">
+        <LeftSideBar/>
+        <!-- <table class="table">
           <thead>
             <tr><th>1</th><th>2</th></tr>
           </thead>
@@ -47,15 +48,18 @@
               <td>4</td><td>5</td>
             </tr>
           </tbody>
-        </table>
+        </table> -->
 
       </aside>
       <section class="body-content">
         <RouterView />
+        <!-- <MainContainer/> -->
       </section>
       <aside class="right-sidebar">
         <!-- <RouterLink class="nav-to" to="/rightSideBar">  Right Sidebar</RouterLink> -->
-        <RouterLink class="nav-to" to="/openKart">  Open Kart</RouterLink>
+        <RouterLink class="nav-to" to="/openKart">  Open Kart</RouterLink><br>
+        <RouterLink class="nav-to" to="/digi/userLogin">  User Login</RouterLink><br>
+        <RouterLink class="nav-to" to="/digi/registerUser">  Register User</RouterLink>
       </aside>
     </div>
     <footer class="footer">Footer</footer>
@@ -63,7 +67,9 @@
 </template>
 
 <script>
+import LeftSideBar from '@/components/LeftSideBar.vue'
 export default {
+  components : {LeftSideBar},
   name: "PageLayout",
 };
 </script>
@@ -163,6 +169,6 @@ html {
 
 .navbar-nav{
   background-color:turquoise;
-  border-radius: 30%;
+  border-radius: 8px;
 }
 </style>

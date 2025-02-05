@@ -14,7 +14,7 @@ public class Payment {
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long paymentId;
-    private Double amount;
+    private double amount;
     private String currency;
     private String receipt;
     private String url;

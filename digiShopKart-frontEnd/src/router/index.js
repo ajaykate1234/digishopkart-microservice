@@ -8,8 +8,12 @@ import AddProduct from '@/views/product/AddProduct.vue'
 import EditProduct from '@/views/product/EditProduct.vue'
 import CustomerView from '@/views/customer/CustomerView.vue'
 import ShoppingDashboard from '@/views/shopping/ShoppingDashboard.vue'
+import LeftSideBar from '@/components/LeftSideBar.vue'
 import RightSideBar from '@/components/RightSideBar.vue'
 import OpenKart from '@/views/kart/OpenKart.vue'
+import MainContainer from '@/components/MainContainer.vue'
+import LoginComponent from '@/components/LoginComponent.vue'
+import RegisterComponent from '@/components/RegisterComponent.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,9 +24,19 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path:'/leftSideBar',
+      name:'LeftSideBar',
+      component: LeftSideBar
+    },
+    {
       path:'/rightSideBar',
       name:'RightSideBar',
       component: RightSideBar,
+    },
+    {
+      path:'/mainConainer',
+      name:MainContainer,
+      component: MainContainer
     },
     {
       path:'/openKart',
@@ -84,6 +98,16 @@ const router = createRouter({
       path:'/digi/shopping',
       name:'ShoppigDashboard',
       component:ShoppingDashboard
+    },
+    {
+      path: '/digi/userLogin',
+      name:'UserLogin',
+      component: LoginComponent
+    },
+    {
+      path:'/digi/registerUser',
+      name:'RegisterUser',
+      component: RegisterComponent
     },
   ],
 })

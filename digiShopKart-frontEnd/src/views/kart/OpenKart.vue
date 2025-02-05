@@ -44,8 +44,9 @@ import { onMounted, reactive, toRefs} from 'vue';
                         email:'Bhalu',
                         password: 'Kaliya'
                     }, 
-                })
-        const fetchBearerToken=()=>{
+            })
+
+            const fetchBearerToken=()=>{
                 axios.post(`http://localhost:8082/auth/login`,state.JwtRequest).then(res=>{
                     console.log("fetchBearerToken : res : ",res);
                     localStorage.setItem('jwtToken',res.data.jwtToken)
@@ -54,8 +55,8 @@ import { onMounted, reactive, toRefs} from 'vue';
                 })
             }
 
-     // for now I have permited this url for backend , but facing some issue with this Jwt Authorization
-        const fetchAllkartItemsForCustomer=()=>{
+             // for now I have permited this url for backend , but facing some issue with this Jwt Authorization
+            const fetchAllkartItemsForCustomer=()=>{
                 axios.get(
                     `http://localhost:8082/digi/kart/fetchItems?customerId=${111}`,
                     {
