@@ -20,6 +20,7 @@
 
 # discount-service
 - All CRUD APIs for table manipulation
+- Test cases added for DiscountCouponServices
   
 # order-service
 - All CRUD APIs for table manipulation
