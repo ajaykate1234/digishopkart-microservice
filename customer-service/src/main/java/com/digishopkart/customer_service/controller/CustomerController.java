@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/digi")
-@CrossOrigin("*")
+//@CrossOrigin("*")
 public class CustomerController {
 
     @Autowired

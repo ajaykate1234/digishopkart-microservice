@@ -10,6 +10,7 @@
 - All CRUD APIs for table manipulation
 - Added User entity and LoginController to login and registration endpoints
 - Added OAuth 2.0 for LoginWithGoogle feature to Login user
+- Spring actuator added 
 
 # product-service
 - All CRUD APIs for table manipulation
@@ -21,11 +22,13 @@
 # discount-service
 - All CRUD APIs for table manipulation
 - Test cases added for DiscountCouponServices
-  
+- Spring actuator added
+
 # order-service
 - All CRUD APIs for table manipulation
 - FeignClient added to communicate with other services
 - load balancer added in order-service while calling external endpoints using feignClient
+- AOP Aspect class added to execute common functionality before and after method execution. ( added just for concept understanding)
 
 # payment-service
 - added independent microservice for payment API integration (not working)

@@ -3,6 +3,7 @@ package com.digishopkart.order_service.controller;
 import com.digishopkart.order_service.entity.Order;
 import com.digishopkart.order_service.services.OrderService;
 import com.digishopkart.order_service.services.ProductServiceClient;
+import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -12,7 +13,7 @@ import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-@Slf4j
+@Log4j2
 @RestController
 @RequestMapping("digi")
 public class OrderController {

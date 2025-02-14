@@ -23,9 +23,9 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth-> auth
-                        .requestMatchers("/","/digi/user/info","/digi/user/**").permitAll()
+                        .requestMatchers("/","/digi/user/info","/digi/user/**","/digi/customer/**").permitAll()
                         .requestMatchers("/oauth/login").authenticated()
-                        .anyRequest().authenticated()
+                        .anyRequest().permitAll()
                 )
                 .oauth2Login();
         return http.build();

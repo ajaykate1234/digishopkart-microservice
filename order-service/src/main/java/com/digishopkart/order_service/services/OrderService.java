@@ -77,6 +77,7 @@ public class OrderService {
         }
     }
 
+    // Create order Service
     public Order createOrder (Customer customer, Product product, DiscountCoupon discountCoupon,Long varientId){
         try {
 
@@ -99,15 +100,7 @@ public class OrderService {
                     }
                 }
 
-                Double finalPrice= null;
-                if (discountCoupon.getCouponType().equals(CouponType.FLAT)){
-                    finalPrice = product.getProductPrice()-discountCoupon.getValue();
-                    log.info("createOrder :FLAT final price : {}",finalPrice);
-                } else if (discountCoupon.getCouponType().equals(CouponType.PERCENTAGE)) {
-                    finalPrice = product.getProductPrice() - (product.getProductPrice() * discountCoupon.getValue() )/ 100;
-                    log.info("createOrder :PERCENTAGE final price : {}",finalPrice);
-                }
-
+                Double finalPrice= calculateDiscount(discountCoupon,product);
 
                 Order order = new Order();
                 order.setFullName(customer.getName());
@@ -125,6 +118,21 @@ public class OrderService {
             return null;
         }
         return null;
+    }
+
+    // Method to calculate Discount Price
+    public Double calculateDiscount(DiscountCoupon discountCoupon, Product product){
+        Double finalPrice = 0.0;
+        if (discountCoupon.getCouponType().equals(CouponType.FLAT)){
+            finalPrice = product.getProductPrice()-discountCoupon.getValue();
+            log.info("createOrder :FLAT final price : {}",finalPrice);
+            return finalPrice;
+        } else if (discountCoupon.getCouponType().equals(CouponType.PERCENTAGE)) {
+            finalPrice = product.getProductPrice() - (product.getProductPrice() * discountCoupon.getValue() )/ 100;
+            log.info("createOrder :PERCENTAGE final price : {}",finalPrice);
+            return finalPrice;
+        }
+        return finalPrice;
     }
 
     public Page<Order> getAllOrdersByPagging(Pageable pageable) {
