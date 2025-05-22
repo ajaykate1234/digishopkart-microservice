@@ -14,6 +14,8 @@ import OpenKart from '@/views/kart/OpenKart.vue'
 import MainContainer from '@/components/MainContainer.vue'
 import LoginComponent from '@/components/LoginComponent.vue'
 import RegisterComponent from '@/components/RegisterComponent.vue'
+import InterviewPractice from '@/components/InterviewPractice.vue'
+import RazorpayPayment from '@/components/RazorpayPayment.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -109,6 +111,18 @@ const router = createRouter({
       name:'RegisterUser',
       component: RegisterComponent
     },
+
+    {
+      path:'/digi/interviewPractice',
+      name: 'InterviewPractice',
+      component: InterviewPractice
+    },
+
+    {
+      path: '/digi/razorpay',
+      name: RazorpayPayment,
+      component: RazorpayPayment
+    }
   ],
 })
 

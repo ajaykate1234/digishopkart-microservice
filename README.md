@@ -48,3 +48,5 @@
 - Added UI for all services with nav-bar options
 - Added searchQuery to find product by name or brand
 - Added pages for Login, Registration and various components
+- Added loginWith google option in login page (need to fix)
+- Added page for makePayment for razorpay payment 

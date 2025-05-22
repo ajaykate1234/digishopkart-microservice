@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.Base64;
+import java.util.UUID;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 
@@ -44,7 +45,7 @@ public class PaymentService {
         JSONObject orderRequest = new JSONObject();
         orderRequest.put("amount", (int)(amount * 100)); // Amount in paise (INR)
         orderRequest.put("currency", "INR");
-        orderRequest.put("receipt", "txn_12345");
+        orderRequest.put("receipt", UUID.randomUUID().toString());
         orderRequest.put("payment_capture", 1); // Auto capture payment
 
         Order order = client.orders.create(orderRequest);

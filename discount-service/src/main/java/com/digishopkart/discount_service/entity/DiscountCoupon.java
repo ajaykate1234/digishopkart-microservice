@@ -2,16 +2,15 @@ package com.digishopkart.discount_service.entity;
 
 import com.digishopkart.discount_service.enums.CouponType;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class DiscountCoupon {
 
     @Id

@@ -16,24 +16,41 @@
         <module name="order-service" />
         <module name="ApiGateway" />
       </profile>
-      <profile name="Annotation profile for subscription-service" enabled="true">
+      <profile name="Annotation profile for AWSDemoProject" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="AWSDemoProject" />
+      </profile>
+      <profile name="Annotation profile for findHotel" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
+        <module name="findHotel" />
         <module name="subscription-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fintech-demo" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AWSDemoProject" options="-parameters" />
       <module name="ApiGateway" options="-parameters" />
       <module name="Payment-Service" options="-parameters" />
       <module name="Registry-Service" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="discount-service" options="-parameters" />
+      <module name="findHotel" options="-parameters" />
+      <module name="fintech-demo" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
       <module name="subscription-service" options="-parameters" />

@@ -16,6 +16,8 @@ import org.springframework.http.*;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponentsBuilder;
+
 import java.util.*;
 
 @Service
@@ -37,6 +39,9 @@ public class LoginServcie {
 
     @Value("${spring.security.oauth2.client.registration.google.redirect-uri}")
     private String redirectUri;
+
+    @Value("${spring.security.oauth2.client.registration.google.googleAuthUrl}")
+    private String googleAuthUrl;
 
     public User loginUser(User user){
        log.info("loginUser: User LoggedIn");
@@ -87,36 +92,74 @@ public class LoginServcie {
     }
 
 
-    public String exchangeTokenService(String authorizationCode) {
-//        public String getAccessToken(String authorizationCode, String clientId, String clientSecret, String redirectUri) {
+    public String buildGoogleAuthUrl() {
+        return UriComponentsBuilder.fromHttpUrl(googleAuthUrl)
+                .queryParam("response_type", "code")
+                .queryParam("client_id", clientId)
+                .queryParam("redirect_uri", redirectUri)
+                .queryParam("scope", "email profile")
+                .queryParam("state", "mystate")
+                .toUriString();
+    }
+
+    // work on that
+    public void googleAuthUrlCallService() {
           try {
-              String tokenUrl = "https://oauth2.googleapis.com/token";
+            String scope = "email"; //profile email
+            String responseType = "code"; // OAuth requires a code response
+            String state = "mystate"; // Optional, used for CSRF protection
 
-              // Create form data (MultiValueMap) for the token exchange
-              MultiValueMap<String, String> requestBody = new LinkedMultiValueMap<>();
-              requestBody.add("code", authorizationCode);
-              requestBody.add("client_id", clientId);
-              requestBody.add("client_secret", clientSecret);
-              requestBody.add("redirect_uri", redirectUri);
-              requestBody.add("grant_type", "authorization_code");
+              // Construct Google OAuth URL
+            String googleAuthUrlCall = googleAuthUrl+
+                    "?response_type="+responseType+
+                    "&client_id="+clientId+
+                    "&scope="+scope+
+                    "&state="+state+
+                    "&redirect_uri="+redirectUri;
 
-              // Send POST request to Google's token endpoint
+            log.info("googleAuthUrlCallService : googleAuthUrlCall:{}",googleAuthUrlCall);
+
               RestTemplate restTemplate = new RestTemplate();
-              HttpHeaders headers = new HttpHeaders();
-              headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-
-              HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(requestBody, headers);
-              ResponseEntity<Map> response = restTemplate.exchange(tokenUrl, HttpMethod.POST, entity, Map.class);
-
-              log.info("exchangeTokenService : response :{}",response);
-              // Get access token from the response
-              Map<String, String> responseBody = response.getBody();
-              return responseBody != null ? responseBody.get("access_token") : null;
-
+              ResponseEntity<String> response =   restTemplate.exchange(googleAuthUrlCall,HttpMethod.GET,null,String.class);
+                log.info("googleAuthUrlCallService : response :{}",response.getBody());
+//                return response.getBody();
           }catch (Exception e){
               log.error("exchangeTokenService : Exceptionn: {}",e);
-              return e.getMessage();
+//              return e.getMessage();
           }
+    }
+
+    //bkp
+    public String exchangeTokenService(String authorizationCode) {
+//        public String getAccessToken(String authorizationCode, String clientId, String clientSecret, String redirectUri) {
+        try {
+            String tokenUrl = "https://oauth2.googleapis.com/token";
+
+            // Create form data (MultiValueMap) for the token exchange
+            MultiValueMap<String, String> requestBody = new LinkedMultiValueMap<>();
+            requestBody.add("code", authorizationCode);
+            requestBody.add("client_id", clientId);
+            requestBody.add("client_secret", clientSecret);
+            requestBody.add("redirect_uri", redirectUri);
+            requestBody.add("grant_type", "authorization_code");
+
+            // Send POST request to Google's token endpoint
+            RestTemplate restTemplate = new RestTemplate();
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
+            HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(requestBody, headers);
+            ResponseEntity<Map> response = restTemplate.exchange(tokenUrl, HttpMethod.POST, entity, Map.class);
+
+            log.info("exchangeTokenService : response :{}",response);
+            // Get access token from the response
+            Map<String, String> responseBody = response.getBody();
+            return responseBody != null ? responseBody.get("access_token") : null;
+
+        }catch (Exception e){
+            log.error("exchangeTokenService : Exceptionn: {}",e);
+            return e.getMessage();
+        }
 //        }
     }
 

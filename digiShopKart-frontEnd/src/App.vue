@@ -59,7 +59,8 @@
         <!-- <RouterLink class="nav-to" to="/rightSideBar">  Right Sidebar</RouterLink> -->
         <RouterLink class="nav-to" to="/openKart">  Open Kart</RouterLink><br>
         <RouterLink class="nav-to" to="/digi/userLogin">  User Login</RouterLink><br>
-        <RouterLink class="nav-to" to="/digi/registerUser">  Register User</RouterLink>
+        <RouterLink class="nav-to" to="/digi/registerUser">  Register User</RouterLink><br>
+        <RouterLink class="nav-to" to="/digi/razorpay">Make Payment</RouterLink>
       </aside>
     </div>
     <footer class="footer">Footer</footer>

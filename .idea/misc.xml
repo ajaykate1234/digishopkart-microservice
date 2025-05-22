@@ -13,6 +13,9 @@
         <option value="$PROJECT_DIR$/Payment-Service/pom.xml" />
         <option value="$PROJECT_DIR$/../../Definedge project/KYC_Project/DSBLKYC/kycproj-service/pom.xml" />
         <option value="$PROJECT_DIR$/subscription-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../AWS/AWSDemoProject/pom.xml" />
+        <option value="$PROJECT_DIR$/../AWS/fintech-demo/pom.xml" />
+        <option value="$USER_HOME$/Desktop/Hotel Test/findHotel/pom.xml" />
       </list>
     </option>
   </component>

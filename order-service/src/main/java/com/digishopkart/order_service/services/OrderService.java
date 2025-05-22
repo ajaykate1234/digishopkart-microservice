@@ -6,8 +6,10 @@ import com.digishopkart.order_service.entity.Order;
 import com.digishopkart.order_service.enums.AddressType;
 import com.digishopkart.order_service.enums.CouponType;
 import com.digishopkart.order_service.repository.OrderRepository;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
@@ -60,7 +62,9 @@ public class OrderService {
             Customer customerResponse = customerServiceClient.getCustomerById(customerId);
             log.info("placeOrderService: customerResponse : {}",customerResponse);
 
-            Product productResponse = productServiceClient.getProductById(productId);
+//            Product productResponse = productServiceClient.getProductById(productId);
+
+            Product productResponse =getProductFromExternerService(productId);
             log.info("placeOrderService: productResponse : {}",productResponse);
 
             DiscountCoupon discountCouponResponse = discountServiceClient.getDiscountCouponByid(discountCouponId);
@@ -76,6 +80,22 @@ public class OrderService {
             return null;
         }
     }
+
+    // resilience4j
+    @CircuitBreaker(name = "productService", fallbackMethod = "getProductFallback")
+    public Product getProductFromExternerService(Long productId){
+        Product productResponse = productServiceClient.getProductById(productId);
+        log.info("getProductFromExternerService: productResponse : {}",productResponse);
+        return productResponse;
+    }
+
+    // Fallback method when circuit is OPEN
+    public Product getProductFallback(Long productId, Throwable ex) {
+        log.error("Fallback triggered due to error: {}", ex.getMessage());
+//        return new Product(productId, "Default Product", "Fallback Description", 0.0);
+        throw new RuntimeException("Product Service is currently unavailable");
+    }
+
 
     // Create order Service
     public Order createOrder (Customer customer, Product product, DiscountCoupon discountCoupon,Long varientId){

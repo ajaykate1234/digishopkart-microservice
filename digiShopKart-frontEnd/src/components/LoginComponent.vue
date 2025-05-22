@@ -53,7 +53,8 @@
                     </tr>
                     <tr>
                         <td>
-                            <button class="btn btn-success" @click="loginWithGoogle()">SignIn with Google</button>
+                            <!-- <button class="btn btn-success" @click="loginWithGoogle()">SignIn with Google</button> -->
+                            <button class="btn btn-success" @click="loginWithGoogleTry()">SignIn with Google</button>
                         </td>
                     </tr>
                 </tbody>
@@ -95,7 +96,7 @@ export default {
         // this.loginUser();
 
         // this.getUserInfo();
-        this.loginWithGoogle();
+        // this.loginWithGoogle();
 
     },
 
@@ -170,6 +171,23 @@ export default {
             //     })    
         },
 
+
+        // work on that
+        loginWithGoogleTry() {
+            console.log("loginWithGoogleTry ...!");
+            
+            axios.get(`http://localhost:8086/oauth2/googleAuthUrlCall`).then(res=>{
+                console.log("loginWithGoogleTry : res : ",res);
+                
+            }).catch(err=>{
+                console.log("loginWithGoogleTry : Error : ",err);
+                
+            })
+
+
+        },
+
+        //bkp
         loginWithGoogle() {
             console.log("start of  loginWithGoogle");
             

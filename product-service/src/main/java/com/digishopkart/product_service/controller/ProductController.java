@@ -42,6 +42,7 @@ public class ProductController {
 //
 //        Product product = objectMapper.readValue(productJson, Product.class);
 
+
         // Create and configure ObjectMapper
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule()); // Register JavaTimeModule

@@ -1,1 +1,237 @@
-2024-10-04 08:08:38,011 [WARN] com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h20m27s673ms430µs).
+2025-04-20 18:49:22,713 [INFO] com.digishopkart.discount_service.DiscountServiceApplicationTests [main] Starting DiscountServiceApplicationTests using Java 17.0.12 with PID 17072 (started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\discount-service)
+2025-04-20 18:49:22,732 [DEBUG] com.digishopkart.discount_service.DiscountServiceApplicationTests [main] Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-04-20 18:49:22,734 [INFO] com.digishopkart.discount_service.DiscountServiceApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2025-04-20 18:49:22,883 [DEBUG] org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@58783f6c
+2025-04-20 18:49:26,015 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 18:49:26,522 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 479 ms. Found 1 JPA repository interface.
+2025-04-20 18:49:27,292 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ec1b38b1-7691-3093-8b62-394bb93f973f
+2025-04-20 18:49:28,275 [WARN] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-20 18:49:28,288 [WARN] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-04-20 18:49:28,862 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 18:49:29,144 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-20 18:49:29,259 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-04-20 18:49:30,415 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 18:49:30,523 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-04-20 18:49:31,520 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2459333a
+2025-04-20 18:49:31,526 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-04-20 18:49:31,687 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 18:49:31,703 [WARN] org.hibernate.orm.deprecation [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-20 18:49:34,143 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 18:49:34,296 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 18:49:35,967 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 18:49:36,413 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 7 mappings in 'requestMappingHandlerMapping'
+2025-04-20 18:49:36,898 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-04-20 18:49:37,027 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-20 18:49:37,156 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-20 18:49:39,490 [INFO] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2025-04-20 18:49:39,614 [WARN] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 18:49:39,645 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 18 endpoints beneath base path '/actuator'
+2025-04-20 18:49:39,854 [INFO] org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2025-04-20 18:49:40,041 [INFO] com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2025-04-20 18:49:40,053 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2025-04-20 18:49:40,147 [INFO] com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2025-04-20 18:49:40,148 [INFO] com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2025-04-20 18:49:40,149 [INFO] com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2025-04-20 18:49:40,149 [INFO] com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2025-04-20 18:49:40,149 [INFO] com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2025-04-20 18:49:40,150 [INFO] com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2025-04-20 18:49:40,151 [INFO] com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2025-04-20 18:49:40,617 [DEBUG] org.springframework.web.client.RestTemplate [main] HTTP GET http://localhost:8761/eureka/apps/
+2025-04-20 18:49:40,892 [DEBUG] org.springframework.web.client.RestTemplate [main] Accept=[application/json, application/*+json]
+2025-04-20 18:49:41,005 [DEBUG] org.springframework.web.client.RestTemplate [main] Response 200 OK
+2025-04-20 18:49:41,016 [DEBUG] org.springframework.web.client.RestTemplate [main] Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-20 18:49:41,078 [INFO] com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2025-04-20 18:49:41,086 [INFO] com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2025-04-20 18:49:41,091 [INFO] com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 18:49:41,104 [INFO] com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1745155181101 with initial instances count: 2
+2025-04-20 18:49:41,121 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application DISCOUNT-SERVICE with eureka with status UP
+2025-04-20 18:49:41,124 [INFO] com.netflix.discovery.DiscoveryClient [main] Saw local status change event StatusChangeEvent [timestamp=1745155181124, current=UP, previous=STARTING]
+2025-04-20 18:49:41,130 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083: registering service...
+2025-04-20 18:49:41,153 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] HTTP POST http://localhost:8761/eureka/apps/DISCOUNT-SERVICE
+2025-04-20 18:49:41,159 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Accept=[application/json, application/*+json]
+2025-04-20 18:49:41,204 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Writing [InstanceInfo [instanceId = Sunil-Bandgar:discount-service:8083, appName = DISCOUNT-SERVICE, hostName = Sunil-Bandgar, status = UP, ipAddr = 192.168.228.243, port = 8083, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@3c9cab4] as "application/json"
+2025-04-20 18:49:41,238 [INFO] com.digishopkart.discount_service.DiscountServiceApplicationTests [main] Started DiscountServiceApplicationTests in 20.275 seconds (process running for 26.573)
+2025-04-20 18:49:41,255 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Response 204 NO_CONTENT
+2025-04-20 18:49:41,257 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083 - registration status: 204
+2025-04-20 18:49:43,766 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] fetchDiscountCouponByIdService: res : DiscountCoupon(id=1, couponType=FLAT, value=50.0)
+2025-04-20 18:49:43,869 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] updateDiscountCouponService : res : DiscountCoupon(id=1, couponType=FLAT, value=50.0)
+2025-04-20 18:49:44,062 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] addDiscountCouponService : res:DiscountCoupon(id=1, couponType=FLAT, value=50.0)
+2025-04-20 18:49:44,116 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] fetchAllDiscountCouponsService: Page 1 of 1 containing com.digishopkart.discount_service.entity.DiscountCoupon instances
+2025-04-20 18:49:44,197 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] fetchDiscountCouponByIdService: DiscountCoupon not found for id :1
+2025-04-20 18:49:44,198 [ERROR] com.digishopkart.discount_service.services.DiscountCouponService [main] fetchDiscountCouponByIdService: Exception :{}
+java.lang.Exception: DiscountCoupon not found for id : 1
+	at com.digishopkart.discount_service.services.DiscountCouponService.fetchDiscountCouponByIdService(DiscountCouponService.java:57)
+	at com.digishopkart.discount_service.DiscountServiceApplicationTests.lambda$testFetchDiscountCouponByIdService_WhenNotPresent$0(DiscountServiceApplicationTests.java:86)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.digishopkart.discount_service.DiscountServiceApplicationTests.testFetchDiscountCouponByIdService_WhenNotPresent(DiscountServiceApplicationTests.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2025-04-20 18:49:44,246 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] updateDiscountCouponService: DiscountCoupon not found for id :1
+2025-04-20 18:49:44,269 [DEBUG] org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@58783f6c, started on Sun Apr 20 18:49:22 IST 2025
+2025-04-20 18:49:44,274 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application DISCOUNT-SERVICE with eureka with status DOWN
+2025-04-20 18:49:44,278 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1745155184278, current=DOWN, previous=UP]
+2025-04-20 18:49:44,283 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083: registering service...
+2025-04-20 18:49:44,285 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] HTTP POST http://localhost:8761/eureka/apps/DISCOUNT-SERVICE
+2025-04-20 18:49:44,288 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Accept=[application/json, application/*+json]
+2025-04-20 18:49:44,290 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Writing [InstanceInfo [instanceId = Sunil-Bandgar:discount-service:8083, appName = DISCOUNT-SERVICE, hostName = Sunil-Bandgar, status = DOWN, ipAddr = 192.168.228.243, port = 8083, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@3c9cab4] as "application/json"
+2025-04-20 18:49:44,338 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 18:49:44,364 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Response 204 NO_CONTENT
+2025-04-20 18:49:44,369 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083 - registration status: 204
+2025-04-20 18:49:44,374 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-04-20 18:49:44,416 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-04-20 18:49:44,417 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2025-04-20 18:49:47,449 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Unregistering ...
+2025-04-20 18:49:47,458 [DEBUG] org.springframework.web.client.RestTemplate [SpringApplicationShutdownHook] HTTP DELETE http://localhost:8761/eureka/apps/DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083
+2025-04-20 18:49:47,474 [DEBUG] org.springframework.web.client.RestTemplate [SpringApplicationShutdownHook] Accept=[application/json, application/*+json]
+2025-04-20 18:49:47,518 [DEBUG] org.springframework.web.client.RestTemplate [SpringApplicationShutdownHook] Response 200 OK
+2025-04-20 18:49:47,519 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083 - deregister  status: 200
+2025-04-20 18:49:47,547 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Completed shut down of DiscoveryClient
+2025-04-20 21:12:29,518 [INFO] com.digishopkart.discount_service.DiscountServiceApplicationTests [main] Starting DiscountServiceApplicationTests using Java 17.0.12 with PID 13864 (started by Vozon in D:\Aj\digiShopKart\digishopkart-microservice\discount-service)
+2025-04-20 21:12:29,521 [DEBUG] com.digishopkart.discount_service.DiscountServiceApplicationTests [main] Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-04-20 21:12:29,523 [INFO] com.digishopkart.discount_service.DiscountServiceApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2025-04-20 21:12:29,696 [DEBUG] org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6993c8df
+2025-04-20 21:12:32,718 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-20 21:12:33,196 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 443 ms. Found 1 JPA repository interface.
+2025-04-20 21:12:33,880 [INFO] org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ec1b38b1-7691-3093-8b62-394bb93f973f
+2025-04-20 21:12:34,809 [WARN] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-04-20 21:12:34,819 [WARN] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-04-20 21:12:35,330 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-20 21:12:35,527 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-04-20 21:12:35,635 [INFO] org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-04-20 21:12:36,091 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-20 21:12:36,291 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-04-20 21:12:37,196 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50d91a0f
+2025-04-20 21:12:37,201 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-04-20 21:12:37,294 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-20 21:12:37,295 [WARN] org.hibernate.orm.deprecation [main] HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-04-20 21:12:39,191 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-20 21:12:39,381 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 21:12:40,972 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-20 21:12:41,345 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 7 mappings in 'requestMappingHandlerMapping'
+2025-04-20 21:12:41,760 [DEBUG] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-04-20 21:12:41,884 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-04-20 21:12:41,978 [DEBUG] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-04-20 21:12:43,979 [INFO] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2025-04-20 21:12:44,112 [WARN] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-20 21:12:44,139 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 18 endpoints beneath base path '/actuator'
+2025-04-20 21:12:44,335 [INFO] org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2025-04-20 21:12:44,534 [INFO] com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2025-04-20 21:12:44,552 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2025-04-20 21:12:44,617 [INFO] com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2025-04-20 21:12:44,618 [INFO] com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2025-04-20 21:12:44,618 [INFO] com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2025-04-20 21:12:44,619 [INFO] com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2025-04-20 21:12:44,619 [INFO] com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2025-04-20 21:12:44,619 [INFO] com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2025-04-20 21:12:44,619 [INFO] com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2025-04-20 21:12:45,189 [DEBUG] org.springframework.web.client.RestTemplate [main] HTTP GET http://localhost:8761/eureka/apps/
+2025-04-20 21:12:45,441 [DEBUG] org.springframework.web.client.RestTemplate [main] Accept=[application/json, application/*+json]
+2025-04-20 21:12:45,539 [DEBUG] org.springframework.web.client.RestTemplate [main] Response 200 OK
+2025-04-20 21:12:45,544 [DEBUG] org.springframework.web.client.RestTemplate [main] Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-20 21:12:45,595 [INFO] com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2025-04-20 21:12:45,600 [INFO] com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2025-04-20 21:12:45,605 [INFO] com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-20 21:12:45,619 [INFO] com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1745163765613 with initial instances count: 1
+2025-04-20 21:12:45,630 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application DISCOUNT-SERVICE with eureka with status UP
+2025-04-20 21:12:45,632 [INFO] com.netflix.discovery.DiscoveryClient [main] Saw local status change event StatusChangeEvent [timestamp=1745163765632, current=UP, previous=STARTING]
+2025-04-20 21:12:45,636 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083: registering service...
+2025-04-20 21:12:45,645 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] HTTP POST http://localhost:8761/eureka/apps/DISCOUNT-SERVICE
+2025-04-20 21:12:45,650 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Accept=[application/json, application/*+json]
+2025-04-20 21:12:45,687 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Writing [InstanceInfo [instanceId = Sunil-Bandgar:discount-service:8083, appName = DISCOUNT-SERVICE, hostName = Sunil-Bandgar, status = UP, ipAddr = 192.168.228.243, port = 8083, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@1835b24b] as "application/json"
+2025-04-20 21:12:45,709 [INFO] com.digishopkart.discount_service.DiscountServiceApplicationTests [main] Started DiscountServiceApplicationTests in 17.323 seconds (process running for 23.834)
+2025-04-20 21:12:45,751 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Response 204 NO_CONTENT
+2025-04-20 21:12:45,752 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083 - registration status: 204
+2025-04-20 21:12:46,278 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] updateDiscountCouponService: DiscountCoupon not found for id :1
+2025-04-20 21:12:46,286 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] fetchDiscountCouponByIdService: res : DiscountCoupon(id=1, couponType=FLAT, value=100.0)
+2025-04-20 21:12:46,294 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] addDiscountCouponService : res:DiscountCoupon(id=1, couponType=FLAT, value=100.0)
+2025-04-20 21:12:46,303 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] fetchAllDiscountCouponsService: Page 1 of 1 containing com.digishopkart.discount_service.entity.DiscountCoupon instances
+2025-04-20 21:12:46,311 [INFO] com.digishopkart.discount_service.services.DiscountCouponService [main] updateDiscountCouponService : res : DiscountCoupon(id=1, couponType=FLAT, value=100.0)
+2025-04-20 21:12:46,388 [DEBUG] org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@6993c8df, started on Sun Apr 20 21:12:29 IST 2025
+2025-04-20 21:12:46,390 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application DISCOUNT-SERVICE with eureka with status DOWN
+2025-04-20 21:12:46,391 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1745163766391, current=DOWN, previous=UP]
+2025-04-20 21:12:46,394 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083: registering service...
+2025-04-20 21:12:46,395 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] HTTP POST http://localhost:8761/eureka/apps/DISCOUNT-SERVICE
+2025-04-20 21:12:46,396 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Accept=[application/json, application/*+json]
+2025-04-20 21:12:46,397 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Writing [InstanceInfo [instanceId = Sunil-Bandgar:discount-service:8083, appName = DISCOUNT-SERVICE, hostName = Sunil-Bandgar, status = DOWN, ipAddr = 192.168.228.243, port = 8083, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@1835b24b] as "application/json"
+2025-04-20 21:12:46,409 [DEBUG] org.springframework.web.client.RestTemplate [DiscoveryClient-InstanceInfoReplicator-0] Response 204 NO_CONTENT
+2025-04-20 21:12:46,410 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083 - registration status: 204
+2025-04-20 21:12:46,416 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-20 21:12:46,420 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-04-20 21:12:46,447 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-04-20 21:12:46,448 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...
+2025-04-20 21:12:49,464 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Unregistering ...
+2025-04-20 21:12:49,465 [DEBUG] org.springframework.web.client.RestTemplate [SpringApplicationShutdownHook] HTTP DELETE http://localhost:8761/eureka/apps/DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083
+2025-04-20 21:12:49,466 [DEBUG] org.springframework.web.client.RestTemplate [SpringApplicationShutdownHook] Accept=[application/json, application/*+json]
+2025-04-20 21:12:49,483 [DEBUG] org.springframework.web.client.RestTemplate [SpringApplicationShutdownHook] Response 200 OK
+2025-04-20 21:12:49,485 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] DiscoveryClient_DISCOUNT-SERVICE/Sunil-Bandgar:discount-service:8083 - deregister  status: 200
+2025-04-20 21:12:49,512 [INFO] com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Completed shut down of DiscoveryClient

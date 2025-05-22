@@ -29,9 +29,18 @@ public class LoginController {
     @Autowired
     private LoginServcie loginServcie;
 
+    @GetMapping("/googleAuthUrlCall")
+    public ResponseEntity<String> googleAuthUrlCall(){
+//        loginServcie.googleAuthUrlCallService();
+         String res = loginServcie.buildGoogleAuthUrl();
+         log.info("googleAuthUrlCall end...!: res {}", res);
+         return new ResponseEntity<>(res, HttpStatus.OK);
+    }
 
     @GetMapping("/callback")
     public ResponseEntity<?> handleCallback(@RequestParam("code") String authorizationCode) {
+
+        log.info("handleCallback start...!");
         // Handle the OAuth 2.0 callback (e.g., exchange the code for an access token)
         // and process the response
         log.info("Authorization successful. You can now use the token :{}",authorizationCode);
@@ -46,6 +55,7 @@ public class LoginController {
 
     @GetMapping("/callback1")
     public ResponseEntity<User> handleCallback1(@RequestParam("code") String authorizationCode) {
+        log.info("handleCallback1 start...!");
         // Handle the OAuth 2.0 callback (e.g., exchange the code for an access token)
         // and process the response
         log.info("Authorization successful. You can now use the token :{}",authorizationCode);

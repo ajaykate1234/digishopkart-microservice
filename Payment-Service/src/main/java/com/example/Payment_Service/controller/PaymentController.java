@@ -1,15 +1,15 @@
 package com.example.Payment_Service.controller;
 
-import com.example.Payment_Service.entity.Payment;
 import com.example.Payment_Service.services.PaymentService;
 import com.razorpay.RazorpayException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("digi")
+@CrossOrigin(origins = "*")
 public class PaymentController {
 
     @Autowired
@@ -32,10 +32,21 @@ public class PaymentController {
     }
 
     // need to add webhook url in razarpay portal , So getting - Payment verification failed
-    @PostMapping("/verify-payment")
+    @PostMapping("/verify-payment-old")
     public String verifyPayment(@RequestParam String orderId,
                                 @RequestParam String paymentId,
                                 @RequestParam String signature) {
+        boolean isValid = paymentService.verifyPayment(orderId, paymentId, signature);
+        return isValid ? "Payment verified successfully" : "Payment verification failed";
+    }
+
+    // new endpoint
+    @PostMapping("/verify-payment")
+    public String verifyPayment1(@RequestBody Map<String, String> data) {
+        String paymentId = data.get("razorpay_payment_id");
+        String orderId = data.get("razorpay_order_id");
+        String signature = data.get("razorpay_signature");
+
         boolean isValid = paymentService.verifyPayment(orderId, paymentId, signature);
         return isValid ? "Payment verified successfully" : "Payment verification failed";
     }
