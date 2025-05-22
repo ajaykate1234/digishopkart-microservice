@@ -29,9 +29,10 @@
 - FeignClient added to communicate with other services
 - load balancer added in order-service while calling external endpoints using feignClient
 - AOP Aspect class added to execute common functionality before and after method execution. ( added just for concept understanding)
+- Circuit breaker patten with Resilence4j added
 
 # payment-service
-- added independent microservice for payment API integration (not working)
+- added independent microservice for payment API integration
 - Added create-order and verify-payment endpoints with working credentials 
 
   
